@@ -5,7 +5,6 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private CharacterController _characterController;
     [SerializeField] private InputActionAsset _playerInputSystem;
     [SerializeField] private Rigidbody2D _playerRigidBody;
     [SerializeField] private Animator _playerAnimator;
@@ -49,6 +48,11 @@ public class Player : MonoBehaviour
         {
             Jump();
         }
+
+        if(_moveAction.IsPressed() && !_onGround)
+        {
+
+        }
     }
     
     private void Jump()
@@ -58,5 +62,16 @@ public class Player : MonoBehaviour
 
         _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
         //_playerAnimator.SetBool("Jump", true);
+    }
+
+    private void Rotate()
+    {
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawSphere(_overlapCenter.transform.position, _radio);
     }
 }
