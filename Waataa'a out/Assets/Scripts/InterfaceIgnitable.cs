@@ -9,4 +9,8 @@ public interface IIgnitable
     {
 
     }
+    void PassFire()
+    {
+
+    }
 }
