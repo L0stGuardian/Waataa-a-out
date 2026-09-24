@@ -2,11 +2,10 @@ using UnityEngine;
 
 public interface IIgnitable
 {
-    bool _onFire { get; }
+    static bool OnFire { get; }
     int MaxHealth { get; }
-    int _actualHealth { get; }
-    void OnFire()
-    {
-
-    }
+    int CurrentHealth { get; }
+    void FireDamage();
+    void PassFire();
+    void ChangeStatus(bool onFire);
 }
