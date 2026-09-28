@@ -5,7 +5,10 @@ public interface IIgnitable
     static bool OnFire { get; }
     int MaxHealth { get; }
     int CurrentHealth { get; }
-    void FireDamage();
+    int FireDamage { get; }
+    bool CanBurn { get; }
+    void StablishFireDamage(int fireDamage);
+    void DealFireDamage();
     void PassFire();
     void ChangeStatus(bool onFire);
 }

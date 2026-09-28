@@ -1,22 +1,40 @@
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 namespace System.Runtime.CompilerServices
 {
     internal static class IsExternalInit { }
 }
 
-public class Materiales : MonoBehaviour, IIgnitable
+public class Materiales : MonoBehaviour, IIgnitable, IExtinguishable
 {
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
+    public int FireDamage 
+    { 
+        get { return _fireDamage; }
+        set { _fireDamage = value; }
+    }
     [SerializeField] private bool _onFire;
     public bool OnFire
     {
         get { return _onFire; }
         set { _onFire = value; }
     }
+    [SerializeField] private bool _canBurn;
+    public bool CanBurn
+    {
+        get { return _canBurn; }
+        set { _canBurn = value; }
+    }
 
     [Header("References")]
+    private LayerMask _water;
+    public LayerMask Water
+    {
+        get { return (LayerMask)_water; }
+        set { _water = value; }
+    }
     private float _timer = 0f;
     public int MaxHealth { get; } = 100;
     [SerializeField] private int _currentHealth = 100;
@@ -34,6 +52,7 @@ public class Materiales : MonoBehaviour, IIgnitable
     {
         _currentHealth = MaxHealth;
         _lifePercentage = (_currentHealth * 100) / MaxHealth;
+        _water = LayerMask.GetMask("Water");
     }
     void Start()
     {
@@ -46,7 +65,7 @@ public class Materiales : MonoBehaviour, IIgnitable
         _timer += Time.deltaTime;
         if(_onFire && _timer >= 1)
         {
-            FireDamage();
+            DealFireDamage();
             _timer = 0f;
         }
         if (_currentHealth > 0 && _lifePercentage < 25f && _onFire)
@@ -56,7 +75,7 @@ public class Materiales : MonoBehaviour, IIgnitable
         ChangeSprite(_onFire);
     }
 
-    public void FireDamage()
+    public void DealFireDamage()
     {
         
         _currentHealth -= _fireDamage;
@@ -76,7 +95,10 @@ public class Materiales : MonoBehaviour, IIgnitable
 
             if(ignitable != null && ignitableTargets.Add(ignitable))
             {
-                ignitable.ChangeStatus(true);
+                if (_canBurn)
+                {
+                    ignitable.ChangeStatus(true);
+                }
             }
         }
     }
@@ -96,6 +118,11 @@ public class Materiales : MonoBehaviour, IIgnitable
         {
             _objetoRenderer.material.color = Color.green;
         }
+    }
+
+    public void StablishFireDamage(int fireDamage)
+    {
+        _fireDamage = fireDamage;
     }
 
     private void OnDrawGizmos()
