@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using System.Collections;
 namespace System.Runtime.CompilerServices
 {
     internal static class IsExternalInit { }
@@ -26,6 +27,11 @@ public class Materiales : MonoBehaviour, IIgnitable, IExtinguishable
     {
         get { return _canBurn; }
         set { _canBurn = value; }
+    }
+    [SerializeField] private float _timerToBurn;
+    public float TimerToBurn
+    {
+        get { return _timerToBurn; }
     }
 
     [Header("References")]
@@ -102,6 +108,22 @@ public class Materiales : MonoBehaviour, IIgnitable, IExtinguishable
             }
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Water") && CanBurn)
+        {
+            ChangeStatus(false);
+            StartCoroutine(TimeToBurn());
+        }
+    }
+
+    public IEnumerator TimeToBurn()
+    {
+        _canBurn = false;
+        yield return new WaitForSeconds(_timerToBurn);
+        _canBurn = true;
+    }    
 
     public void ChangeStatus(bool onFire)
     {
