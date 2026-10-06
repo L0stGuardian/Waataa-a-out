@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private InputActionAsset _playerInputActions;
 
+    [SerializeField] private Collider2D _triggerColliderWater;
+
     [Header("Movement")]
     private InputAction _jumpAction;
     [SerializeField] private float _jumpStrength;
@@ -106,6 +108,22 @@ public class Player : MonoBehaviour
         Quaternion _rotation = Quaternion.Euler(0f, 0f, _targetRotationZ);
 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, _rotation, _smoothRotationSpeed  * Time.deltaTime);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Water"))
+        {
+            collision.tag = "WaterInPlayer";
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("WaterInPlayer"))
+        {
+            collision.tag = "Water";
+        }
     }
 
     private void OnDrawGizmos()
