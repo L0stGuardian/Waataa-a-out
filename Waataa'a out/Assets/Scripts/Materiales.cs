@@ -1,39 +1,17 @@
-<<<<<<< HEAD
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using System.Collections;
-=======
-using UnityEngine;
->>>>>>> origin/main
-namespace System.Runtime.CompilerServices
-{
-    internal static class IsExternalInit { }
-}
-
-<<<<<<< HEAD
-public class Materiales : MonoBehaviour, IIgnitable, IExtinguishable
-{
-    [Header("Fire")]
-    [SerializeField] private int _fireDamage;
-    public int FireDamage 
-    { 
-        get { return _fireDamage; }
-        set { _fireDamage = value; }
-    }
-=======
+using System.Runtime.CompilerServices;
 public class Materiales : MonoBehaviour, IIgnitable
 {
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
->>>>>>> origin/main
     [SerializeField] private bool _onFire;
     public bool OnFire
     {
         get { return _onFire; }
         set { _onFire = value; }
     }
-<<<<<<< HEAD
     [SerializeField] private bool _canBurn;
     public bool CanBurn
     {
@@ -45,6 +23,11 @@ public class Materiales : MonoBehaviour, IIgnitable
     {
         get { return _timerToBurn; }
     }
+    public int FireDamage
+    {
+        get { return _fireDamage; }
+        set { _fireDamage = value; }
+    }
 
     [Header("References")]
     private LayerMask _water;
@@ -54,66 +37,44 @@ public class Materiales : MonoBehaviour, IIgnitable
         set { _water = value; }
     }
     private float _timer = 0f;
-    public int MaxHealth { get; } = 100;
-    [SerializeField] private int _currentHealth = 100;
-=======
 
     [Header("References")]
     public int MaxHealth { get; } = 100;
     [SerializeField] private int _currentHealth;
->>>>>>> origin/main
     public int CurrentHealth
     {
         get { return _currentHealth; }
         set { _currentHealth = value; }
     }
-<<<<<<< HEAD
     private float _lifePercentage;
-=======
-    private float _lifePercentage => _currentHealth / MaxHealth * 100;
->>>>>>> origin/main
     private float _radio;
     private float _length;
     private Renderer _objetoRenderer;
 
-<<<<<<< HEAD
     void Awake()
     {
         _currentHealth = MaxHealth;
         _lifePercentage = (_currentHealth * 100) / MaxHealth;
         _water = LayerMask.GetMask("Water");
     }
-=======
->>>>>>> origin/main
     void Start()
     {
         _objetoRenderer = GetComponent<Renderer>();
         _radio = _length + 1;
-<<<<<<< HEAD
-=======
-        _currentHealth = MaxHealth;
->>>>>>> origin/main
     }
 
     void Update()
     {
-<<<<<<< HEAD
         _timer += Time.deltaTime;
         if(_onFire && _timer >= 1)
         {
             DealFireDamage();
             _timer = 0f;
-=======
-        if(_onFire)
-        {
-            FireDamage();
->>>>>>> origin/main
         }
         if (_currentHealth > 0 && _lifePercentage < 25f && _onFire)
         {
             PassFire();
         }
-<<<<<<< HEAD
         ChangeSprite(_onFire);
     }
 
@@ -135,41 +96,16 @@ public class Materiales : MonoBehaviour, IIgnitable
 
             if (ReferenceEquals(ignitable, this)) { continue; }
 
-            if(ignitable != null && ignitableTargets.Add(ignitable))
+            if (ignitable != null && ignitableTargets.Add(ignitable))
             {
                 if (_canBurn)
                 {
                     ignitable.ChangeStatus(true);
                 }
-=======
-    }
-
-    private void FireDamage()
-    {
-        
-        _currentHealth -= _fireDamage;
-        _objetoRenderer.material.color = Color.red;
-        Mathf.Clamp(_currentHealth, 0, MaxHealth);
-    }
-
-    private void PassFire()
-    {
-        Collider2D[] _objectsInRadio = Physics2D.OverlapCircleAll(this.transform.position, _radio);
-        foreach (Collider2D collider in _objectsInRadio)
-        {
-            if(TryGetComponent<IIgnitable> (out IIgnitable valor))
-            {
-                IIgnitable.OnFire = true;
-            }
-            else
-            {
-                continue;
->>>>>>> origin/main
             }
         }
     }
 
-<<<<<<< HEAD
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Water") && CanBurn)
@@ -208,8 +144,6 @@ public class Materiales : MonoBehaviour, IIgnitable
         _fireDamage = fireDamage;
     }
 
-=======
->>>>>>> origin/main
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;

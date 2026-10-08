@@ -2,8 +2,7 @@ using UnityEngine;
 
 public interface IIgnitable
 {
-<<<<<<< HEAD
-    static bool OnFire { get; }
+    static bool OnFire { get; set; }
     int MaxHealth { get; }
     int CurrentHealth { get; }
     int FireDamage { get; }
@@ -12,17 +11,4 @@ public interface IIgnitable
     void DealFireDamage();
     void PassFire();
     void ChangeStatus(bool onFire);
-=======
-    static bool OnFire { get; set; }
-    int MaxHealth { get; }
-    int CurrentHealth { get; }
-    void FireDamage()
-    {
-
-    }
-    void PassFire()
-        {
-
-    }
->>>>>>> origin/main
 }
