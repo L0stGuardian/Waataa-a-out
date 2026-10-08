@@ -89,7 +89,6 @@ public class Player : MonoBehaviour
         float targetHorizontalSpeed = _moveValue.x * _jumpStrength;
         _playerRigidBody.linearVelocity = new Vector2(targetHorizontalSpeed, 0f);
         _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
-        //_playerAnimator.SetBool("Jump", true);
 
         float _imbalanceDirection;
         if(_moveValue.x > 0.01f)
@@ -118,6 +117,7 @@ public class Player : MonoBehaviour
         if(collision.CompareTag("Water"))
         {
             collision.isTrigger = false;
+            collision.tag = "WaterInPlayer";
         }
     }
 

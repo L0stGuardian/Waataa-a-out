@@ -180,9 +180,9 @@ MonoBehaviour:
   _playerInputActions: {fileID: -944628639613478452, guid: b036bd98d11d27f4bb4936e76c2e6734, type: 3}
   _triggerColliderWater: {fileID: 200269728}
   _jumpStrength: 6
-  _maxRandomImbalance: 60
-  _smoothRotationSpeed: 50
-  _rotationSpeed: 50
+  _maxRandomImbalance: 120
+  _smoothRotationSpeed: 100
+  _rotationSpeed: 100
   _radio: 0.2
   _overlapCenter: {fileID: 2104222334}
   _ground:
@@ -284,8 +284,8 @@ Transform:
   m_GameObject: {fileID: 200269720}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.62, z: 0}
-  m_LocalScale: {x: 1.3536, y: 1.3536, z: 1.3536}
+  m_LocalPosition: {x: 0.07, y: -2.62, z: 0}
+  m_LocalScale: {x: 1.676569, y: 1.676569, z: 1.676569}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2104222335}

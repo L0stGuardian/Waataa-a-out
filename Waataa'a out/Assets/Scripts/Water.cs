@@ -12,7 +12,7 @@ public class Water : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         IIgnitable material = collision.GetComponent<IIgnitable>();
-        if(material != null)
+        if(material != null && this.tag == "Water")
         {
             this.gameObject.SetActive(false);
         }
