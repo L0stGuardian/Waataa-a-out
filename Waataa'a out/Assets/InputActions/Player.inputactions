@@ -106,6 +106,46 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "WaterPool",
+            "id": "63fb0dea-f5dd-488b-b4c2-cadd0122d525",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "85e7b3c1-5ef2-4a89-9c4e-140806c2f50f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "32d71d49-6810-4050-9227-39a31a3f650a",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7d53af2f-6a73-4076-a2b7-214f20179917",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
