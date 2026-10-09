@@ -1,9 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
-namespace System.Runtime.CompilerServices
-{
-    internal static class IsExternalInit { }
-}
-
+using System.Collections;
+using System.Runtime.CompilerServices;
 public class Materiales : MonoBehaviour, IIgnitable
 {
     [Header("Fire")]
@@ -14,6 +12,31 @@ public class Materiales : MonoBehaviour, IIgnitable
         get { return _onFire; }
         set { _onFire = value; }
     }
+    [SerializeField] private bool _canBurn;
+    public bool CanBurn
+    {
+        get { return _canBurn; }
+        set { _canBurn = value; }
+    }
+    [SerializeField] private float _timerToBurn;
+    public float TimerToBurn
+    {
+        get { return _timerToBurn; }
+    }
+    public int FireDamage
+    {
+        get { return _fireDamage; }
+        set { _fireDamage = value; }
+    }
+
+    [Header("References")]
+    private LayerMask _water;
+    public LayerMask Water
+    {
+        get { return (LayerMask)_water; }
+        set { _water = value; }
+    }
+    private float _timer = 0f;
 
     [Header("References")]
     public int MaxHealth { get; } = 100;
@@ -23,52 +46,102 @@ public class Materiales : MonoBehaviour, IIgnitable
         get { return _currentHealth; }
         set { _currentHealth = value; }
     }
-    private float _lifePercentage => _currentHealth / MaxHealth * 100;
+    private float _lifePercentage;
     private float _radio;
     private float _length;
     private Renderer _objetoRenderer;
 
+    void Awake()
+    {
+        _currentHealth = MaxHealth;
+        _lifePercentage = (_currentHealth * 100) / MaxHealth;
+        _water = LayerMask.GetMask("Water");
+    }
     void Start()
     {
         _objetoRenderer = GetComponent<Renderer>();
         _radio = _length + 1;
-        _currentHealth = MaxHealth;
     }
 
     void Update()
     {
-        if(_onFire)
+        _timer += Time.deltaTime;
+        if(_onFire && _timer >= 1)
         {
-            FireDamage();
+            DealFireDamage();
+            _timer = 0f;
         }
         if (_currentHealth > 0 && _lifePercentage < 25f && _onFire)
         {
             PassFire();
         }
+        ChangeSprite(_onFire);
     }
 
-    private void FireDamage()
+    public void DealFireDamage()
     {
         
         _currentHealth -= _fireDamage;
-        _objetoRenderer.material.color = Color.red;
-        Mathf.Clamp(_currentHealth, 0, MaxHealth);
+        _lifePercentage = (_currentHealth * 100) / MaxHealth;
+        _currentHealth = Mathf.Clamp(_currentHealth, 0, MaxHealth);
     }
 
-    private void PassFire()
+    public void PassFire()
     {
-        Collider2D[] _objectsInRadio = Physics2D.OverlapCircleAll(this.transform.position, _radio);
-        foreach (Collider2D collider in _objectsInRadio)
+        Collider2D[] objectsInRadio = Physics2D.OverlapCircleAll(this.transform.position, _radio);
+        HashSet<IIgnitable> ignitableTargets = new HashSet<IIgnitable>();
+        foreach (Collider2D collider in objectsInRadio)
         {
-            if(TryGetComponent<IIgnitable> (out IIgnitable valor))
+            IIgnitable ignitable = collider.GetComponentInParent<IIgnitable>();
+
+            if (ReferenceEquals(ignitable, this)) { continue; }
+
+            if (ignitable != null && ignitableTargets.Add(ignitable))
             {
-                IIgnitable.OnFire = true;
-            }
-            else
-            {
-                continue;
+                if (_canBurn)
+                {
+                    ignitable.ChangeStatus(true);
+                }
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Water") && CanBurn)
+        {
+            ChangeStatus(false);
+            StartCoroutine(TimeToBurn());
+        }
+    }
+
+    public IEnumerator TimeToBurn()
+    {
+        _canBurn = false;
+        yield return new WaitForSeconds(_timerToBurn);
+        _canBurn = true;
+    }    
+
+    public void ChangeStatus(bool onFire)
+    {
+        this.OnFire = onFire;
+    }
+
+    private void ChangeSprite(bool fire)
+    {
+        if(fire)
+        {
+            _objetoRenderer.material.color = Color.red;
+        }
+        else
+        {
+            _objetoRenderer.material.color = Color.green;
+        }
+    }
+
+    public void StablishFireDamage(int fireDamage)
+    {
+        _fireDamage = fireDamage;
     }
 
     private void OnDrawGizmos()

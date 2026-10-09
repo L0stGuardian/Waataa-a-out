@@ -16,7 +16,11 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene("LVL2");
         Time.timeScale = 1f;
     }
-
+    public void MovementPruebas()
+    {
+        SceneManager.LoadScene(3);
+        Time.timeScale = 1f;
+    }
     public void LoadMenu()
     {
         SceneManager.LoadScene("MainMenu");
