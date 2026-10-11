@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections.Generic;
@@ -9,19 +11,19 @@ using System.Collections;
 public class WaterPool : MonoBehaviour
 {
     [Header("Water")]
-    [SerializeField] private float _waterToInstance;
-    [SerializeField] private float _waterDelay;
+    [SerializeField] private float _waterToInstance; // Aclarar el significado o las unidades con Tooltip
+    [SerializeField] private float _waterDelay; // Aclarar el significado o las unidades con Tooltip
     [SerializeField] private GameObject _water;
     [SerializeField] private Collider2D _colliderWithCharacter;
     [SerializeField] private InputActionAsset _waterPool;
-    private bool _playerInZone;
+    private bool _playerInZone; // Revisar: usar un verbo de estado (is, has o can)
     InputAction _click;
     private List<GameObject> _instancedWater;
 
     private void Awake()
     {
         _instancedWater = new List<GameObject>();
-        for (int i = 0; i < _waterToInstance; i++)
+        for (int i = 0; i < _waterToInstance; i++) // Aclarar el significado o las unidades con Tooltip
         {
             GameObject newWater = Instantiate(_water, this.transform.position, Quaternion.identity);
             newWater.SetActive(false);
@@ -40,7 +42,7 @@ public class WaterPool : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             _playerInZone = true;
         }
@@ -48,7 +50,7 @@ public class WaterPool : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             _playerInZone = false;
         }
@@ -64,17 +66,17 @@ public class WaterPool : MonoBehaviour
 
     private void CallWater()
     {
-        foreach (GameObject obj in _instancedWater)
+        foreach (GameObject obj in _instancedWater) // Sin abreviaciones
         {
             if (obj.activeInHierarchy) { continue; }
-            Vector3 randomOffset = new Vector3(Random.Range(-0.5f, .5f), Random.Range(-.5f, .5f), 0);
+            Vector3 randomOffset = new Vector3(Random.Range(-0.5f, .5f), Random.Range(-.5f, .5f), 0); // Revisar: usar una constante o configuración con nombre
             obj.transform.position = this.transform.position + randomOffset;
             obj.SetActive(true);
             StartCoroutine(WaitForWater());
         }
     }
 
-    IEnumerator WaitForWater()
+    IEnumerator WaitForWater() // El método debe hacer lo que indica su nombre
     {
         yield return new WaitForSeconds(_waterDelay);
     }

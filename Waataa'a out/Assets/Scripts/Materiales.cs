@@ -1,24 +1,26 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
-public class Materiales : MonoBehaviour, IIgnitable
+public class Materiales : MonoBehaviour, IIgnitable // Usar inglés
 {
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
-    [SerializeField] private bool _onFire;
+    [SerializeField] private bool _onFire; // Revisar: usar un verbo de estado (is, has o can)
     public bool OnFire
     {
         get { return _onFire; }
         set { _onFire = value; }
     }
-    [SerializeField] private bool _canBurn;
+    [SerializeField] private bool _canBurn; // Respetar el orden de los miembros
     public bool CanBurn
     {
         get { return _canBurn; }
         set { _canBurn = value; }
     }
-    [SerializeField] private float _timerToBurn;
+    [SerializeField] private float _timerToBurn; // Respetar el orden de los miembros
     public float TimerToBurn
     {
         get { return _timerToBurn; }
@@ -30,26 +32,26 @@ public class Materiales : MonoBehaviour, IIgnitable
     }
 
     [Header("References")]
-    private LayerMask _water;
+    private LayerMask _water; // Respetar el orden de los miembros
     public LayerMask Water
     {
         get { return (LayerMask)_water; }
         set { _water = value; }
     }
-    private float _timer = 0f;
+    private float _timer = 0f; // Respetar el orden de los miembros
 
     [Header("References")]
     public int MaxHealth { get; } = 100;
-    [SerializeField] private int _currentHealth;
+    [SerializeField] private int _currentHealth; // Respetar el orden de los miembros
     public int CurrentHealth
     {
         get { return _currentHealth; }
         set { _currentHealth = value; }
     }
-    private float _lifePercentage;
-    private float _radio;
-    private float _length;
-    private Renderer _objetoRenderer;
+    private float _lifePercentage; // Respetar el orden de los miembros
+    private float _radio; // Respetar el orden de los miembros; Aclarar el significado o las unidades con Tooltip;
+    private float _length; // Respetar el orden de los miembros
+    private Renderer _objetoRenderer; // Respetar el orden de los miembros; Usar inglés
 
     void Awake()
     {
@@ -60,18 +62,18 @@ public class Materiales : MonoBehaviour, IIgnitable
     void Start()
     {
         _objetoRenderer = GetComponent<Renderer>();
-        _radio = _length + 1;
+        _radio = _length + 1; // Aclarar el significado o las unidades con Tooltip
     }
 
     void Update()
     {
         _timer += Time.deltaTime;
-        if(_onFire && _timer >= 1)
+        if (_onFire && _timer >= 1) // Revisar: usar una constante o configuración con nombre
         {
             DealFireDamage();
             _timer = 0f;
         }
-        if (_currentHealth > 0 && _lifePercentage < 25f && _onFire)
+        if (_currentHealth > 0 && _lifePercentage < 25f && _onFire) // Revisar: usar una constante o configuración con nombre
         {
             PassFire();
         }
@@ -88,7 +90,7 @@ public class Materiales : MonoBehaviour, IIgnitable
 
     public void PassFire()
     {
-        Collider2D[] objectsInRadio = Physics2D.OverlapCircleAll(this.transform.position, _radio);
+        Collider2D[] objectsInRadio = Physics2D.OverlapCircleAll(this.transform.position, _radio); 
         HashSet<IIgnitable> ignitableTargets = new HashSet<IIgnitable>();
         foreach (Collider2D collider in objectsInRadio)
         {
@@ -96,7 +98,7 @@ public class Materiales : MonoBehaviour, IIgnitable
 
             if (ReferenceEquals(ignitable, this)) { continue; }
 
-            if (ignitable != null && ignitableTargets.Add(ignitable))
+            if (ignitable != null && ignitableTargets.Add(ignitable)) // Revisar si se puede usar retorno temprano
             {
                 if (_canBurn)
                 {
@@ -106,7 +108,7 @@ public class Materiales : MonoBehaviour, IIgnitable
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) // Respetar el orden de los miembros
     {
         if (collision.CompareTag("Water") && CanBurn)
         {
@@ -115,7 +117,7 @@ public class Materiales : MonoBehaviour, IIgnitable
         }
     }
 
-    public IEnumerator TimeToBurn()
+    public IEnumerator TimeToBurn() // Usar un verbo en el nombre del método
     {
         _canBurn = false;
         yield return new WaitForSeconds(_timerToBurn);
@@ -129,7 +131,7 @@ public class Materiales : MonoBehaviour, IIgnitable
 
     private void ChangeSprite(bool fire)
     {
-        if(fire)
+        if (fire)
         {
             _objetoRenderer.material.color = Color.red;
         }
@@ -139,7 +141,7 @@ public class Materiales : MonoBehaviour, IIgnitable
         }
     }
 
-    public void StablishFireDamage(int fireDamage)
+    public void StablishFireDamage(int fireDamage) // Respetar el orden de acceso y static; Corregir la ortografía del nombre
     {
         _fireDamage = fireDamage;
     }
