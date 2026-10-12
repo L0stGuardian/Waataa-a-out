@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 
 public class Water : MonoBehaviour
@@ -12,7 +14,7 @@ public class Water : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         IIgnitable material = collision.GetComponent<IIgnitable>();
-        if(material != null && this.tag == "Water")
+        if (material != null && this.tag == "Water")
         {
             this.gameObject.SetActive(false);
         }

@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -16,16 +18,16 @@ public class Player : MonoBehaviour
 
     private InputAction _jumpAction;
     private bool _onGround => Physics2D.OverlapCircle(_overlapCenter.transform.position, _radio, _ground);
-    private Vector2 _moveValue;
-    private InputAction _moveAction;
+    private Vector2 _moveValue; // Respetar el orden de los miembros
+    private InputAction _moveAction; // Respetar el orden de los miembros
 
 
     [Header("Rotation")]
-    [SerializeField] private float _maxRandomImbalance = 90f;
-    [SerializeField] private float _smoothRotationSpeed = 50f;
-    [SerializeField] private float _rotationSpeed = 50f;
+    [SerializeField] private float _maxRandomImbalance = 90f; // Respetar el orden de los miembros
+    [SerializeField] private float _smoothRotationSpeed = 50f; // Respetar el orden de los miembros
+    [SerializeField] private float _rotationSpeed = 50f; // Respetar el orden de los miembros
 
-    private float _targetRotationZ = 0f;
+    private float _targetRotationZ = 0f; // Respetar el orden de los miembros
 
     public float MaxRandomImbalance
     {
@@ -40,9 +42,9 @@ public class Player : MonoBehaviour
 
 
     [Header("OverlapCircle")]
-    [SerializeField] private float _radio;
-    [SerializeField] private GameObject _overlapCenter;
-    [SerializeField] private LayerMask _ground;
+    [SerializeField] private float _radio; // Respetar el orden de los miembros; Aclarar el significado o las unidades con Tooltip;
+    [SerializeField] private GameObject _overlapCenter; // Respetar el orden de los miembros
+    [SerializeField] private LayerMask _ground; // Respetar el orden de los miembros
 
     private void OnEnable()
     {
@@ -66,17 +68,17 @@ public class Player : MonoBehaviour
     private void Update()
     {
         _moveValue = _moveAction.ReadValue<Vector2>();
-        if(_jumpAction.WasPressedThisFrame() && _moveAction.IsPressed() && _onGround)
+        if (_jumpAction.WasPressedThisFrame() && _moveAction.IsPressed() && _onGround)
         {
             Jump();
         }
 
-        if(_moveAction.IsPressed() && !_onGround)
+        if (_moveAction.IsPressed() && !_onGround)
         {
             _targetRotationZ += _moveValue.x * _rotationSpeed * Time.deltaTime;
         }
 
-        if(_onGround)
+        if (_onGround)
         {
             _targetRotationZ = 0f;
         }
@@ -90,8 +92,8 @@ public class Player : MonoBehaviour
         _playerRigidBody.linearVelocity = new Vector2(targetHorizontalSpeed, 0f);
         _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
 
-        float _imbalanceDirection;
-        if(_moveValue.x > 0.01f)
+        float _imbalanceDirection; // Usar camelCase sin _
+        if (_moveValue.x > 0.01f)
         {
             _imbalanceDirection = 1f;
         }
@@ -100,41 +102,41 @@ public class Player : MonoBehaviour
             _imbalanceDirection = -1f;
         }
 
-        float _randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance);
+        float _randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance); // Usar camelCase sin _
         _targetRotationZ += (_randomAngle * _imbalanceDirection);
     }
 
     private void Rotate()
     {
-        Quaternion _rotation = Quaternion.Euler(0f, 0f, _targetRotationZ);
+        Quaternion _rotation = Quaternion.Euler(0f, 0f, _targetRotationZ); // Usar camelCase sin _
 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, _rotation, _smoothRotationSpeed  * Time.deltaTime);
     }
 
-    //Checks collision with the water and desactivates his trigger mode
-    private void OnTriggerEnter2D(Collider2D collision)
+    //Checks collision with the water and desactivates his trigger mode // Explicar el porqué, no el cómo
+    private void OnTriggerEnter2D(Collider2D collision) // Respetar el orden de los miembros
     {
-        if(collision.CompareTag("Water"))
+        if (collision.CompareTag("Water"))
         {
             collision.isTrigger = false;
             collision.tag = "WaterInPlayer";
         }
     }
 
-    //Checks collision with the water and ensures it stays as WaterInPlayer while in collision
-    private void OnTriggerStay2D(Collider2D collision)
+    //Checks collision with the water and ensures it stays as WaterInPlayer while in collision // Explicar el porqué, no el cómo
+    private void OnTriggerStay2D(Collider2D collision) // Respetar el orden de los miembros
     {
-        if(collision.CompareTag("Water"))
+        if (collision.CompareTag("Water"))
         {
             collision.tag = "WaterInPlayer";
         }
     }
 
-    //Checks collision with water to make it trigger when it gets out of the player 
+    //Checks collision with water to make it trigger when it gets out of the player // Explicar el porqué, no el cómo
     //Also changes its tag to Water
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision) // Respetar el orden de los miembros
     {
-        if(collision.CompareTag("WaterInPlayer"))
+        if (collision.CompareTag("WaterInPlayer"))
         {
             collision.tag = "Water";
             collision.isTrigger = true;
