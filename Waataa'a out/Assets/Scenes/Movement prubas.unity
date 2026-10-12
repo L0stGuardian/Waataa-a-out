@@ -453,7 +453,7 @@ MonoBehaviour:
   _playerInputActions: {fileID: -944628639613478452, guid: b036bd98d11d27f4bb4936e76c2e6734, type: 3}
   _triggerColliderWater: {fileID: 200269728}
   _jumpStrength: 6
-  _maxRandomImbalance: 120
+  _maxRandomImbalance: 200
   _smoothRotationSpeed: 100
   _rotationSpeed: 100
   _radio: 0.2
@@ -477,7 +477,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 11bbed4a379cf8049b85a9660e5c9a8b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

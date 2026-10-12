@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
-public class Materiales : MonoBehaviour, IIgnitable // Usar inglés
+public class Materials : MonoBehaviour, IIgnitable // Usar inglés
 {
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
