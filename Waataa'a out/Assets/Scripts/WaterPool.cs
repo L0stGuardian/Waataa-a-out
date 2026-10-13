@@ -11,12 +11,13 @@ using System.Collections;
 public class WaterPool : MonoBehaviour
 {
     [Header("Water")]
-    [SerializeField] private float _waterToInstance; // Aclarar el significado o las unidades con Tooltip
-    [SerializeField] private float _waterDelay; // Aclarar el significado o las unidades con Tooltip
+    [Tooltip("")] private float _rangeToInstance;
+    [Tooltip("")][SerializeField] private float _waterToInstance; // Aclarar el significado o las unidades con Tooltip
+    [Tooltip("")][SerializeField] private float _waterDelay; // Aclarar el significado o las unidades con Tooltip
     [SerializeField] private GameObject _water;
     [SerializeField] private Collider2D _colliderWithCharacter;
     [SerializeField] private InputActionAsset _waterPool;
-    private bool _playerInZone; // Revisar: usar un verbo de estado (is, has o can)
+    private bool _isPlayerInZone;
     InputAction _click;
     private List<GameObject> _instancedWater;
 
@@ -44,7 +45,7 @@ public class WaterPool : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            _playerInZone = true;
+            _isPlayerInZone = true;
         }
     }
 
@@ -52,13 +53,13 @@ public class WaterPool : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            _playerInZone = false;
+            _isPlayerInZone = false;
         }
     }
 
     private void Update()
     {
-        if (_playerInZone && _click.WasPressedThisFrame())
+        if (_isPlayerInZone && _click.WasPressedThisFrame())
         {
             CallWater();
         }
@@ -66,12 +67,12 @@ public class WaterPool : MonoBehaviour
 
     private void CallWater()
     {
-        foreach (GameObject obj in _instancedWater) // Sin abreviaciones
+        foreach (GameObject gameObject in _instancedWater)
         {
-            if (obj.activeInHierarchy) { continue; }
+            if (gameObject.activeInHierarchy) { continue; }
             Vector3 randomOffset = new Vector3(Random.Range(-0.5f, .5f), Random.Range(-.5f, .5f), 0); // Revisar: usar una constante o configuración con nombre
-            obj.transform.position = this.transform.position + randomOffset;
-            obj.SetActive(true);
+            gameObject.transform.position = this.transform.position + randomOffset;
+            gameObject.SetActive(true);
             StartCoroutine(WaitForWater());
         }
     }

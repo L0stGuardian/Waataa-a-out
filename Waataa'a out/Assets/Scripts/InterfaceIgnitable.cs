@@ -7,7 +7,7 @@ public interface IIgnitable
     int CurrentHealth { get; }
     int FireDamage { get; }
     bool CanBurn { get; }
-    void StablishFireDamage(int fireDamage);
+    void EstablishFireDamage(int fireDamage);
     void DealFireDamage();
     void PassFire();
     void ChangeStatus(bool onFire);
