@@ -4,23 +4,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
-public class Materials : MonoBehaviour, IIgnitable // Usar inglés
+public class Materials : MonoBehaviour, IIgnitable
 {
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
-    [SerializeField] private bool _onFire; // Revisar: usar un verbo de estado (is, has o can)
+    [SerializeField] private bool _isOnFire;
+    [SerializeField] private bool _canBurn;
+    [SerializeField] private float _timerToBurn;
     public bool OnFire
     {
-        get { return _onFire; }
-        set { _onFire = value; }
+        get { return _isOnFire; }
+        set { _isOnFire = value; }
     }
-    [SerializeField] private bool _canBurn; // Respetar el orden de los miembros
     public bool CanBurn
     {
         get { return _canBurn; }
         set { _canBurn = value; }
     }
-    [SerializeField] private float _timerToBurn; // Respetar el orden de los miembros
     public float TimerToBurn
     {
         get { return _timerToBurn; }
