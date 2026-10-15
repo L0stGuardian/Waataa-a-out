@@ -32,17 +32,17 @@ public class Materials : MonoBehaviour, IIgnitable
     }
 
     [Header("References")]
-    private LayerMask _water; // Respetar el orden de los miembros
+    private float _timer = 0f;
+    private LayerMask _water;
     public LayerMask Water
     {
         get { return (LayerMask)_water; }
         set { _water = value; }
     }
-    private float _timer = 0f; // Respetar el orden de los miembros
 
     [Header("References")]
-    public int MaxHealth { get; } = 100;
     [SerializeField] private int _currentHealth; // Respetar el orden de los miembros
+    public int MaxHealth { get; } = 100;
     public int CurrentHealth
     {
         get { return _currentHealth; }
@@ -51,7 +51,27 @@ public class Materials : MonoBehaviour, IIgnitable
     private float _lifePercentage; // Respetar el orden de los miembros
     private float _radio; // Respetar el orden de los miembros; Aclarar el significado o las unidades con Tooltip;
     private float _length; // Respetar el orden de los miembros
-    private Renderer _objetoRenderer; // Respetar el orden de los miembros; Usar inglés
+    private Renderer _objectRenderer; // Respetar el orden de los miembros; Usar inglés
+
+    public bool OnFire
+    {
+        get { return _isOnFire; }
+        set { _isOnFire = value; }
+    }
+    public bool CanBurn
+    {
+        get { return _canBurn; }
+        set { _canBurn = value; }
+    }
+    public float TimerToBurn
+    {
+        get { return _timerToBurn; }
+    }
+    public int FireDamage
+    {
+        get { return _fireDamage; }
+        set { _fireDamage = value; }
+    }
 
     void Awake()
     {
@@ -61,23 +81,23 @@ public class Materials : MonoBehaviour, IIgnitable
     }
     void Start()
     {
-        _objetoRenderer = GetComponent<Renderer>();
+        _objectRenderer = GetComponent<Renderer>();
         _radio = _length + 1; // Aclarar el significado o las unidades con Tooltip
     }
 
     void Update()
     {
         _timer += Time.deltaTime;
-        if (_onFire && _timer >= 1) // Revisar: usar una constante o configuración con nombre
+        if (_isOnFire && _timer >= 1) // Revisar: usar una constante o configuración con nombre
         {
             DealFireDamage();
             _timer = 0f;
         }
-        if (_currentHealth > 0 && _lifePercentage < 25f && _onFire) // Revisar: usar una constante o configuración con nombre
+        if (_currentHealth > 0 && _lifePercentage < 25f && _isOnFire) // Revisar: usar una constante o configuración con nombre
         {
             PassFire();
         }
-        ChangeSprite(_onFire);
+        ChangeSprite(_isOnFire);
     }
 
     public void DealFireDamage()
@@ -133,15 +153,15 @@ public class Materials : MonoBehaviour, IIgnitable
     {
         if (fire)
         {
-            _objetoRenderer.material.color = Color.red;
+            _objectRenderer.material.color = Color.red;
         }
         else
         {
-            _objetoRenderer.material.color = Color.green;
+            _objectRenderer.material.color = Color.green;
         }
     }
 
-    public void StablishFireDamage(int fireDamage) // Respetar el orden de acceso y static; Corregir la ortografía del nombre
+    public void EstablishFireDamage(int fireDamage) // Respetar el orden de acceso y static; Corregir la ortografía del nombre
     {
         _fireDamage = fireDamage;
     }

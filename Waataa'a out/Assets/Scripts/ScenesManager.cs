@@ -5,24 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
 {
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            LoadLevel2();
+        }
+    }
 
-    public void LoadLvl1() // Sin abreviaciones
+    public void LoadLevel1()
     {
         SceneManager.LoadScene("LVL1");
         Time.timeScale = 1f;
 
     }
 
-    public void LoadLvl2() // Sin abreviaciones
+    public void LoadLevel2() // Sin abreviaciones
     {
         SceneManager.LoadScene("LVL2");
         Time.timeScale = 1f;
     }
-    public void MovementPruebas() // Usar un verbo en el nombre del método; Usar inglés
-    {
-        SceneManager.LoadScene(3); // Revisar: usar una constante o configuración con nombre
-        Time.timeScale = 1f;
-    }
+   
     public void LoadMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -39,17 +42,10 @@ public class ScenesManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void CloseApp() // Sin abreviaciones
+    public void CloseApplication() 
     {
         Application.Quit();
         Debug.Log("You quit the application");
     }
 
-    public void OnTriggerEnter2D(Collider2D collision) // Respetar el orden de los miembros
-    {
-        if (collision.CompareTag("Player"))
-        {
-            LoadLvl2();
-        }
-    }
 }
