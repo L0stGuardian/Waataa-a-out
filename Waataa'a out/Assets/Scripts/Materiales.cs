@@ -41,38 +41,19 @@ public class Materials : MonoBehaviour, IIgnitable
     }
 
     [Header("References")]
-    [SerializeField] private int _currentHealth; // Respetar el orden de los miembros
     public int MaxHealth { get; } = 100;
+
+    private float _lifePercentage;
+    [Tooltip ("El radio del área afectada")] private float _radio;
+    private float _length;
+    [SerializeField] private int _currentHealth;
+
+    private Renderer _objectRenderer; // Respetar el orden de los miembros; Usar inglés
     public int CurrentHealth
     {
         get { return _currentHealth; }
         set { _currentHealth = value; }
     }
-    private float _lifePercentage; // Respetar el orden de los miembros
-    private float _radio; // Respetar el orden de los miembros; Aclarar el significado o las unidades con Tooltip;
-    private float _length; // Respetar el orden de los miembros
-    private Renderer _objectRenderer; // Respetar el orden de los miembros; Usar inglés
-
-    public bool OnFire
-    {
-        get { return _isOnFire; }
-        set { _isOnFire = value; }
-    }
-    public bool CanBurn
-    {
-        get { return _canBurn; }
-        set { _canBurn = value; }
-    }
-    public float TimerToBurn
-    {
-        get { return _timerToBurn; }
-    }
-    public int FireDamage
-    {
-        get { return _fireDamage; }
-        set { _fireDamage = value; }
-    }
-
     void Awake()
     {
         _currentHealth = MaxHealth;
@@ -100,6 +81,15 @@ public class Materials : MonoBehaviour, IIgnitable
         ChangeSprite(_isOnFire);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Water") && CanBurn)
+        {
+            ChangeStatus(false);
+            StartCoroutine(WaitTimeToBurn());
+        }
+    }
+
     public void DealFireDamage()
     {
         
@@ -118,26 +108,15 @@ public class Materials : MonoBehaviour, IIgnitable
 
             if (ReferenceEquals(ignitable, this)) { continue; }
 
-            if (ignitable != null && ignitableTargets.Add(ignitable)) // Revisar si se puede usar retorno temprano
+            if (ignitable != null && ignitableTargets.Add(ignitable)) 
             {
-                if (_canBurn)
-                {
-                    ignitable.ChangeStatus(true);
-                }
+                if (_canBurn) { ignitable.ChangeStatus(true); }
             }
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) // Respetar el orden de los miembros
-    {
-        if (collision.CompareTag("Water") && CanBurn)
-        {
-            ChangeStatus(false);
-            StartCoroutine(TimeToBurn());
-        }
-    }
 
-    public IEnumerator TimeToBurn() // Usar un verbo en el nombre del método
+    public IEnumerator WaitTimeToBurn()
     {
         _canBurn = false;
         yield return new WaitForSeconds(_timerToBurn);
@@ -161,7 +140,7 @@ public class Materials : MonoBehaviour, IIgnitable
         }
     }
 
-    public void EstablishFireDamage(int fireDamage) // Respetar el orden de acceso y static; Corregir la ortografía del nombre
+    public void EstablishFireDamage(int fireDamage)
     {
         _fireDamage = fireDamage;
     }
