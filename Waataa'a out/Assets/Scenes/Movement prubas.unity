@@ -402,22 +402,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 200269720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10c2a3cde1f4aa446bfc25cbb75b1a0a, type: 3}
+  m_Script: {fileID: 11500000, guid: d8fc3b84348aa1644b9aa18637aab04f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Prueba_touch
+  m_EditorClassIdentifier: Assembly-CSharp::TouchTest
   _playerRigidBody: {fileID: 200269723}
   _playerAnimator: {fileID: 200269721}
   _playerInputActions: {fileID: -944628639613478452, guid: b036bd98d11d27f4bb4936e76c2e6734, type: 3}
   _triggerColliderWater: {fileID: 200269728}
   _jumpStrength: 6
-  _smoothRotationSpeed: 100
-  _rotationSpeed: 100
-  _maxRandomImbalance: 120
-  _radio: 0.001
   _overlapCenter: {fileID: 2104222334}
   _ground:
     serializedVersion: 2
     m_Bits: 8
+  _radio: 0.001
+  _smoothRotationSpeed: 100
+  _rotationSpeed: 100
+  _maxRandomImbalance: 120
 --- !u!1 &247452654
 GameObject:
   m_ObjectHideFlags: 0

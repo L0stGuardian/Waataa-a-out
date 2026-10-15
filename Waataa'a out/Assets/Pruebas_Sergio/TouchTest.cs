@@ -10,20 +10,19 @@ public class TouchTest : MonoBehaviour
     [SerializeField] private InputActionAsset _playerInputActions;
     [SerializeField] private Collider2D _triggerColliderWater;
     
-
     [Header("Movement")]
     private Vector2 _moveValue;
     [SerializeField] private float _jumpStrength = 6f;
     private bool _onGround => Physics2D.OverlapCircle(_overlapCenter.transform.position, _radio, _ground);
 
-
     [Header("OverlapCircle")]
-    [SerializeField] private float _radio; // Respetar el orden de los miembros; Aclarar el significado o las unidades con Tooltip; Usar inglés
-    [SerializeField] private GameObject _overlapCenter; // Respetar el orden de los miembros
-    [SerializeField] private LayerMask _ground; // Respetar el orden de los miembros
+    [SerializeField] private GameObject _overlapCenter; 
+    [SerializeField] private LayerMask _ground; 
+    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radio; 
 
     [Header("Screen")]
     private int _screenWidth = Screen.width;
+
     [Header("Rotation")]
     public float MaxRandomImbalance
     {
@@ -38,8 +37,10 @@ public class TouchTest : MonoBehaviour
     private float _targetRotationZ = 0.2f; 
     [SerializeField] private float _smoothRotationSpeed = 100f; 
     [SerializeField] private float _rotationSpeed = 100f; 
-    [SerializeField] private float _maxRandomImbalance = 120f; 
-    
+    [SerializeField] private float _maxRandomImbalance = 120f;
+    private const float _jumpLeftDirection = -1f;
+    private const float _jumpRightDirection = 1f;
+
 
     private void OnEnable()
     {
@@ -60,7 +61,7 @@ public class TouchTest : MonoBehaviour
 
     private void Update()
     {
-        int _halfScreen = _screenWidth / 2; // Usar camelCase sin _
+        int HalfScreen = _screenWidth / 2; 
         if (Touchscreen.current == null) { return; }
         if (!Touchscreen.current.primaryTouch.press.isPressed) { return; }
         Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue(); 
@@ -70,19 +71,19 @@ public class TouchTest : MonoBehaviour
             return;
         }
 
-        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame && touchPosition.x > 0 && touchPosition.x < _halfScreen && _onGround)
+        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame && touchPosition.x > 0 && touchPosition.x < HalfScreen && _onGround)
         {
-            JumpLeft();
+            Jump(_jumpLeftDirection);
         }
-        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame && touchPosition.x >= _halfScreen && touchPosition.x < _screenWidth && _onGround)
+        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame && touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && _onGround)
         {
-            JumpRight();
+            Jump(_jumpRightDirection);
         }
-        if (touchPosition.x > 0 && touchPosition.x < _halfScreen && !_onGround)
+        if (touchPosition.x > 0 && touchPosition.x < HalfScreen && !_onGround)
         {
             _targetRotationZ += _rotationSpeed * Time.deltaTime;
         }
-        if (touchPosition.x >= _halfScreen && touchPosition.x < _screenWidth && !_onGround)
+        if (touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && !_onGround)
         {
             _targetRotationZ += -_rotationSpeed * Time.deltaTime;
         }
@@ -94,42 +95,7 @@ public class TouchTest : MonoBehaviour
 
         Rotate();
     }
-    private void JumpRight()
-    {
-        _moveValue = new Vector2(1f, 0f);
-        float targetHorizontalSpeed = _moveValue.x * _jumpStrength;
-        _playerRigidBody.linearVelocity = new Vector2(targetHorizontalSpeed, 0f);
-        _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
-
-        float imbalanceDirection = 1f; 
-
-
-        float randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance); 
-        _targetRotationZ += (randomAngle * imbalanceDirection);
-    }
-    private void JumpLeft() // Revisar el código duplicado
-    {
-        _moveValue = new Vector2(-1f, 0f);
-        float targetHorizontalSpeed = _moveValue.x * _jumpStrength;
-        _playerRigidBody.linearVelocity = new Vector2(targetHorizontalSpeed, 0f);
-        _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
-
-        float imbalanceDirection = -1f; 
-
-
-        float randomAngle = UnityEngine.Random.Range(-1f, _maxRandomImbalance);
-        _targetRotationZ += (randomAngle * imbalanceDirection);
-    }
-
-    private void Rotate()
-    {
-        Quaternion _rotation = Quaternion.Euler(0f, 0f, _targetRotationZ); // Usar camelCase sin _
-
-        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, _rotation, _smoothRotationSpeed * Time.deltaTime);
-    }
-
-    //Checks collision with the water and desactivates his trigger mode // Explicar el porqué, no el cómo
-    private void OnTriggerEnter2D(Collider2D collision) // Respetar el orden de los miembros; Revisar el código duplicado
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Water"))
         {
@@ -138,18 +104,14 @@ public class TouchTest : MonoBehaviour
         }
     }
 
-    //Checks collision with the water and ensures it stays as WaterInPlayer while in collision // Explicar el porqué, no el cómo
-    private void OnTriggerStay2D(Collider2D collision) // Respetar el orden de los miembros
+    private void OnTriggerStay2D(Collider2D collision) 
     {
         if (collision.CompareTag("Water"))
         {
             collision.tag = "WaterInPlayer";
         }
     }
-
-    //Checks collision with water to make it trigger when it gets out of the player // Explicar el porqué, no el cómo
-    //Also changes its tag to Water
-    private void OnTriggerExit2D(Collider2D collision) // Respetar el orden de los miembros
+    private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("WaterInPlayer"))
         {
@@ -157,6 +119,30 @@ public class TouchTest : MonoBehaviour
             collision.isTrigger = true;
         }
     }
+    private void Jump(float direction = 0)
+    {
+        _moveValue = new Vector2(direction, 0f);
+        float targetHorizontalSpeed = _moveValue.x * _jumpStrength;
+        _playerRigidBody.linearVelocity = new Vector2(targetHorizontalSpeed, 0f);
+        _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
+
+        float imbalanceDirection = direction;
+
+
+        float randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance);
+        _targetRotationZ += (randomAngle * imbalanceDirection);
+    
+    }
+
+    private void Rotate()
+    {
+        Quaternion Rotation = Quaternion.Euler(0f, 0f, _targetRotationZ); 
+
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Rotation, _smoothRotationSpeed * Time.deltaTime);
+    }
+
+    
+   
 
     private void OnDrawGizmos()
     {
