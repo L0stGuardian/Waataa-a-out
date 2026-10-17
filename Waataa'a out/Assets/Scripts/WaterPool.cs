@@ -1,5 +1,3 @@
-// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
-
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections.Generic;
@@ -11,20 +9,21 @@ using System.Collections;
 public class WaterPool : MonoBehaviour
 {
     [Header("Water")]
-    [Tooltip("")] private float _rangeToInstance;
-    [Tooltip("")][SerializeField] private float _waterToInstance; // Aclarar el significado o las unidades con Tooltip
-    [Tooltip("")][SerializeField] private float _waterDelay; // Aclarar el significado o las unidades con Tooltip
+    [Tooltip("Variation at spawning the water")] 
+    [SerializeField] private float _rangeToInstance = 0.5f;
+    [Tooltip("How many water will be instanced")] 
+    [SerializeField] private float _waterToInstance;
     [SerializeField] private GameObject _water;
     [SerializeField] private Collider2D _colliderWithCharacter;
     [SerializeField] private InputActionAsset _waterPool;
     private bool _isPlayerInZone;
-    InputAction _click;
+    private InputAction _click;
     private List<GameObject> _instancedWater;
 
     private void Awake()
     {
         _instancedWater = new List<GameObject>();
-        for (int i = 0; i < _waterToInstance; i++) // Aclarar el significado o las unidades con Tooltip
+        for (int instance = 0; instance < _waterToInstance; instance++)
         {
             GameObject newWater = Instantiate(_water, this.transform.position, Quaternion.identity);
             newWater.SetActive(false);
@@ -43,26 +42,17 @@ public class WaterPool : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            _isPlayerInZone = true;
-        }
+        if (collision.CompareTag("Player")) { _isPlayerInZone = true; }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            _isPlayerInZone = false;
-        }
+        if (collision.CompareTag("Player")) { _isPlayerInZone = false; }
     }
 
     private void Update()
     {
-        if (_isPlayerInZone && _click.WasPressedThisFrame())
-        {
-            CallWater();
-        }
+        if (_isPlayerInZone && _click.WasPressedThisFrame()) { CallWater(); }
     }
 
     private void CallWater()
@@ -70,15 +60,10 @@ public class WaterPool : MonoBehaviour
         foreach (GameObject gameObject in _instancedWater)
         {
             if (gameObject.activeInHierarchy) { continue; }
-            Vector3 randomOffset = new Vector3(Random.Range(-0.5f, .5f), Random.Range(-.5f, .5f), 0); // Revisar: usar una constante o configuración con nombre
+
+            Vector3 randomOffset = new Vector3(Random.Range(-_rangeToInstance, _rangeToInstance), Random.Range(-_rangeToInstance, _rangeToInstance), 0);
             gameObject.transform.position = this.transform.position + randomOffset;
             gameObject.SetActive(true);
-            StartCoroutine(WaitForWater());
         }
-    }
-
-    IEnumerator WaitForWater() // El método debe hacer lo que indica su nombre
-    {
-        yield return new WaitForSeconds(_waterDelay);
     }
 }

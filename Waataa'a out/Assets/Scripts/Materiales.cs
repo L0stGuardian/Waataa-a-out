@@ -1,5 +1,3 @@
-// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
-
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
@@ -32,7 +30,15 @@ public class Materials : MonoBehaviour, IIgnitable
     }
 
     [Header("References")]
+    public int MaxHealth { get; } = 100;
+    [Tooltip("Ratio for the fire to deal damage")] 
+    [SerializeField] private float _damageRatio = 1f;
+    [Tooltip("Limit at which the object will spread the fire")]
+    [SerializeField] private int _percentageToBurn = 25;
+    [SerializeField] private int _currentHealth;
+
     private float _timer = 0f;
+    private float _lifePercentage;
     private LayerMask _water;
     public LayerMask Water
     {
@@ -40,15 +46,11 @@ public class Materials : MonoBehaviour, IIgnitable
         set { _water = value; }
     }
 
-    [Header("References")]
-    public int MaxHealth { get; } = 100;
+    [Header("Settings")]
 
-    private float _lifePercentage;
-    [Tooltip ("El radio del área afectada")] private float _radio;
-    private float _length;
-    [SerializeField] private int _currentHealth;
-
-    private Renderer _objectRenderer; // Respetar el orden de los miembros; Usar inglés
+    [Tooltip ("Radio of the afected area to burn")] 
+    [SerializeField] private float _radio;
+    private Renderer _objectRenderer;
     public int CurrentHealth
     {
         get { return _currentHealth; }
@@ -63,21 +65,19 @@ public class Materials : MonoBehaviour, IIgnitable
     void Start()
     {
         _objectRenderer = GetComponent<Renderer>();
-        _radio = _length + 1; // Aclarar el significado o las unidades con Tooltip
     }
 
     void Update()
     {
         _timer += Time.deltaTime;
-        if (_isOnFire && _timer >= 1) // Revisar: usar una constante o configuración con nombre
+        if (_isOnFire && _timer >= _damageRatio)
         {
             DealFireDamage();
             _timer = 0f;
         }
-        if (_currentHealth > 0 && _lifePercentage < 25f && _isOnFire) // Revisar: usar una constante o configuración con nombre
-        {
-            PassFire();
-        }
+
+        if (_currentHealth > 0 && _lifePercentage < _percentageToBurn && _isOnFire) { PassFire(); }
+
         ChangeSprite(_isOnFire);
     }
 
@@ -108,10 +108,7 @@ public class Materials : MonoBehaviour, IIgnitable
 
             if (ReferenceEquals(ignitable, this)) { continue; }
 
-            if (ignitable != null && ignitableTargets.Add(ignitable)) 
-            {
-                if (_canBurn) { ignitable.ChangeStatus(true); }
-            }
+            if (ignitable != null && ignitableTargets.Add(ignitable)) { if (_canBurn) { ignitable.ChangeStatus(true); } }
         }
     }
 
@@ -130,14 +127,9 @@ public class Materials : MonoBehaviour, IIgnitable
 
     private void ChangeSprite(bool fire)
     {
-        if (fire)
-        {
-            _objectRenderer.material.color = Color.red;
-        }
-        else
-        {
-            _objectRenderer.material.color = Color.green;
-        }
+        if (fire) { _objectRenderer.material.color = Color.red; }
+
+        else { _objectRenderer.material.color = Color.green; }
     }
 
     public void EstablishFireDamage(int fireDamage)
