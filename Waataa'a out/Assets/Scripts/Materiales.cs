@@ -2,26 +2,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
+using UnityEditor.Search;
 public class Materials : MonoBehaviour, IIgnitable
 {
+    [SerializeField] private IIgnitable.FireStates _actualFireState = IIgnitable.FireStates.canBurn;
+    public IIgnitable.FireStates ActualFireState
+    {
+        get { return _actualFireState; }
+        set {  _actualFireState = value; }
+    }
+
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
     [SerializeField] private bool _isOnFire;
     [SerializeField] private bool _canBurn;
-    [SerializeField] private float _timerToBurn;
-    public bool OnFire
-    {
-        get { return _isOnFire; }
-        set { _isOnFire = value; }
-    }
-    public bool CanBurn
-    {
-        get { return _canBurn; }
-        set { _canBurn = value; }
-    }
+    [SerializeField] private float _timerToBurnAgain;
+    [SerializeField] private float _timeToBurnAgain = 5f;
     public float TimerToBurn
     {
-        get { return _timerToBurn; }
+        get { return _timerToBurnAgain; }
     }
     public int FireDamage
     {
@@ -70,23 +69,32 @@ public class Materials : MonoBehaviour, IIgnitable
     void Update()
     {
         _timer += Time.deltaTime;
-        if (_isOnFire && _timer >= _damageRatio)
+        if (_actualFireState == IIgnitable.FireStates.onFire && _timer >= _damageRatio)
         {
             DealFireDamage();
             _timer = 0f;
         }
 
-        if (_currentHealth > 0 && _lifePercentage < _percentageToBurn && _isOnFire) { PassFire(); }
+        if (_currentHealth == 0 && _actualFireState != IIgnitable.FireStates.extinguished) { ChangeStatus("extinguished"); }
 
-        ChangeSprite(_isOnFire);
+        if (_currentHealth > 0 && _lifePercentage <= _percentageToBurn && _actualFireState == IIgnitable.FireStates.onFire) { PassFire(); }
+
+        if (_actualFireState == IIgnitable.FireStates.waitingToBurnAgain) { _timerToBurnAgain += Time.deltaTime; }
+
+        if (_timerToBurnAgain >= _timeToBurnAgain) 
+        { 
+            ChangeStatus("canburn"); 
+            _timerToBurnAgain = 0f;
+        }
+
+        ChangeSprite();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Water") && CanBurn)
+        if (collision.CompareTag("Water") && _actualFireState == IIgnitable.FireStates.onFire)
         {
-            ChangeStatus(false);
-            StartCoroutine(WaitTimeToBurn());
+            ChangeStatus("waiting");
         }
     }
 
@@ -107,29 +115,60 @@ public class Materials : MonoBehaviour, IIgnitable
             IIgnitable ignitable = collider.GetComponentInParent<IIgnitable>();
 
             if (ReferenceEquals(ignitable, this)) { continue; }
-
-            if (ignitable != null && ignitableTargets.Add(ignitable)) { if (_canBurn) { ignitable.ChangeStatus(true); } }
+            
+            if (ignitable != null && ignitableTargets.Add(ignitable)) { if (ignitable.ActualFireState == IIgnitable.FireStates.canBurn) { ignitable.ChangeStatus("onfire"); } }
         }
     }
 
-
-    public IEnumerator WaitTimeToBurn()
+    public void ChangeStatus(string fireState)
     {
-        _canBurn = false;
-        yield return new WaitForSeconds(_timerToBurn);
-        _canBurn = true;
-    }    
+        Debug.Log(fireState);
+        switch (fireState)
+        {
+            case "onfire":
+                _actualFireState = IIgnitable.FireStates.onFire;
+                break;
 
-    public void ChangeStatus(bool onFire)
-    {
-        this.OnFire = onFire;
+            case "waiting":
+                _actualFireState = IIgnitable.FireStates.waitingToBurnAgain;
+                break;
+
+            case "canburn":
+                _actualFireState = IIgnitable.FireStates.canBurn;
+                break;
+
+            case "extinguished":
+                _actualFireState = IIgnitable.FireStates.extinguished;
+                break;
+
+            default:
+                break;
+        }
     }
 
-    private void ChangeSprite(bool fire)
+    private void ChangeSprite()
     {
-        if (fire) { _objectRenderer.material.color = Color.red; }
+        switch (_actualFireState)
+        {
+            case IIgnitable.FireStates.onFire:
+                _objectRenderer.material.color = Color.red;
+                break;
 
-        else { _objectRenderer.material.color = Color.green; }
+            case IIgnitable.FireStates.waitingToBurnAgain:
+                _objectRenderer.material.color = Color.blue;
+                break;
+
+            case IIgnitable.FireStates.canBurn:
+                _objectRenderer.material.color = Color.green;
+                break;
+
+            case IIgnitable.FireStates.extinguished:
+                _objectRenderer.material.color = Color.gray;
+                break;
+
+            default:
+                break;
+        }
     }
 
     public void EstablishFireDamage(int fireDamage)

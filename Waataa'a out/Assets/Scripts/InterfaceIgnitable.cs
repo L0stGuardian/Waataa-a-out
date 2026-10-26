@@ -2,13 +2,13 @@ using UnityEngine;
 
 public interface IIgnitable
 {
-    static bool OnFire { get; set; }
+    enum FireStates { onFire, waitingToBurnAgain, canBurn, extinguished };
+    FireStates ActualFireState { get; }
     int MaxHealth { get; }
     int CurrentHealth { get; }
     int FireDamage { get; }
-    bool CanBurn { get; }
     void EstablishFireDamage(int fireDamage);
     void DealFireDamage();
     void PassFire();
-    void ChangeStatus(bool onFire);
+    void ChangeStatus(string fireState);
 }
