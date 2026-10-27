@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a6e467e50b3304090e0cd7e61db3e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  _maxJumpStrength: 7
   _playerRigidBody: {fileID: 200269723}
   _playerAnimator: {fileID: 200269721}
   _playerInputActions: {fileID: -944628639613478452, guid: b036bd98d11d27f4bb4936e76c2e6734, type: 3}
@@ -205,7 +206,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: 11bbed4a379cf8049b85a9660e5c9a8b, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -906,7 +907,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 11bbed4a379cf8049b85a9660e5c9a8b, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

@@ -2,10 +2,12 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class Player : MonoBehaviour
 {
     [Header("References")]
+    [SerializeField] private float _maxJumpStrength = 5f;
     [SerializeField] private Rigidbody2D _playerRigidBody;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private InputActionAsset _playerInputActions;
@@ -67,7 +69,14 @@ public class Player : MonoBehaviour
     private void Update()
     {
         _moveValue = _moveAction.ReadValue<Vector2>();
-        if (_jumpAction.WasPressedThisFrame() && _moveAction.IsPressed() && _onGround) { Jump(); }
+
+        if (_jumpAction.IsPressed()) 
+        {
+            _jumpStrength += Time.deltaTime * 3;
+            _jumpStrength = Mathf.Clamp(_jumpStrength, 0, _maxJumpStrength);
+        }
+
+        if (_jumpAction.WasReleasedThisFrame() && _onGround) { Jump(); }
 
         if (_moveAction.IsPressed() && !_onGround) { _targetRotationZ += _moveValue.x * _rotationSpeed * Time.deltaTime; }
 
@@ -115,6 +124,7 @@ public class Player : MonoBehaviour
 
         float randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance);
         _targetRotationZ += (randomAngle * imbalanceDirection);
+        _jumpStrength = 0f;
     }
 
     private void Rotate()
