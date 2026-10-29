@@ -3,18 +3,22 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private float _maxJumpStrength = 5f;
+    [Tooltip("Modifies the velocity at which the jump strength increases")]
+    [SerializeField] private float _jumpStrengthModifier = 5;
     [SerializeField] private Rigidbody2D _playerRigidBody;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private InputActionAsset _playerInputActions;
     [SerializeField] private Collider2D _triggerColliderWater;
+    [SerializeField] private Slider _jumpSlider;
 
     [Header("Movement")]
-    [SerializeField] private float _jumpStrength;
+    [SerializeField] private float _jumpStrength = 0f   ;
 
     private InputAction _jumpAction;
     private InputAction _moveAction;
@@ -64,19 +68,32 @@ public class Player : MonoBehaviour
 
         _playerAnimator = GetComponent<Animator>();
         _playerRigidBody = GetComponent<Rigidbody2D>();
+
+        _jumpSlider.minValue = 0f;
+        _jumpSlider.maxValue = _maxJumpStrength;
+        _jumpSlider.interactable = false;
+        _jumpSlider.value = 0;
+        ActivateAndDeactivateSlider(false);
+
+        _jumpStrength = 0f;
     }
 
     private void Update()
     {
         _moveValue = _moveAction.ReadValue<Vector2>();
 
-        if (_jumpAction.IsPressed()) 
+        if (_jumpAction.IsPressed() && _onGround) 
         {
-            _jumpStrength += Time.deltaTime * 3;
-            _jumpStrength = Mathf.Clamp(_jumpStrength, 0, _maxJumpStrength);
+            CalculateJumpStrength();
+            ActivateAndDeactivateSlider(true);
+            CalculateStrengthSlider();
         }
 
-        if (_jumpAction.WasReleasedThisFrame() && _onGround) { Jump(); }
+        if (_jumpAction.WasReleasedThisFrame() && _onGround) 
+        { 
+            Jump();
+            ActivateAndDeactivateSlider(false);
+        }
 
         if (_moveAction.IsPressed() && !_onGround) { _targetRotationZ += _moveValue.x * _rotationSpeed * Time.deltaTime; }
 
@@ -132,6 +149,22 @@ public class Player : MonoBehaviour
         Quaternion rotation = Quaternion.Euler(0f, 0f, _targetRotationZ);
 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rotation, _smoothRotationSpeed  * Time.deltaTime);
+    }
+
+    private void CalculateJumpStrength()
+    {
+            _jumpStrength += Time.deltaTime * _jumpStrengthModifier;
+            _jumpStrength = Mathf.Clamp(_jumpStrength, 0, _maxJumpStrength);
+    }
+    
+    private void CalculateStrengthSlider()
+    {
+        _jumpSlider.value = _jumpStrength;
+    }
+
+    private void ActivateAndDeactivateSlider(bool isActive)
+    {
+        _jumpSlider.gameObject.SetActive(isActive);
     }
 
     private void OnDrawGizmos()

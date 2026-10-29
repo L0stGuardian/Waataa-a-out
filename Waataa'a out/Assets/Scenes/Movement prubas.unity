@@ -315,10 +315,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   _maxJumpStrength: 7
+  _jumpStrengthModifier: 5
   _playerRigidBody: {fileID: 200269723}
   _playerAnimator: {fileID: 200269721}
   _playerInputActions: {fileID: -944628639613478452, guid: b036bd98d11d27f4bb4936e76c2e6734, type: 3}
   _triggerColliderWater: {fileID: 200269728}
+  _jumpSlider: {fileID: 111435060}
   _jumpStrength: 6
   _maxRandomImbalance: 120
   _smoothRotationSpeed: 100
@@ -409,7 +411,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.57, y: 0.54}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -429,6 +431,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2104222335}
+  - {fileID: 175791058}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &200269727
@@ -467,24 +470,24 @@ PolygonCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0.88, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.88, y: 0.92}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.88, y: 0.94}
+    newSize: {x: 2.57, y: 0.54}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.3787855, y: 0.42914987}
-      - {x: 0.18224162, y: -0.3854525}
-      - {x: -0.17615041, y: -0.397506}
+    - - {x: 0.3787855, y: 0.46165928}
+      - {x: 0.19307812, y: -0.3854525}
+      - {x: -0.17181581, y: -0.38016763}
       - {x: -0.38432914, y: 0.4514377}
       - {x: -0.44219154, y: 0.46025658}
       - {x: -0.26515308, y: -0.44580436}
       - {x: 0.25818312, y: -0.44890562}
-      - {x: 0.44219148, y: 0.4241264}
+      - {x: 0.45519525, y: 0.46097055}
   m_UseDelaunayMesh: 1
 --- !u!61 &200269728
 BoxCollider2D:
@@ -522,10 +525,10 @@ BoxCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0, z: 0.88, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.88, y: 0.92}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 0.88, y: 0.94}
+    newSize: {x: 2.57, y: 0.54}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
