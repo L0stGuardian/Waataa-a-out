@@ -9,7 +9,8 @@ public class RandomBurn : MonoBehaviour
 
     public GameObject[] ChildrenObject;
 
-    public int quemar;
+    [SerializeField]private int _maxOfBurned;
+    
 
     private void Awake()
     {
@@ -19,8 +20,18 @@ public class RandomBurn : MonoBehaviour
 
     void Start()
     {
-        int quemar = UnityEngine.Random.Range(0, ChildrenObject.Length);
-        Debug.Log("Objeto quemado:" + ChildrenObject[quemar]);
+        
+        int burnedObjects = UnityEngine.Random.Range(1, _maxOfBurned);
+        for (int i = 0; i <= burnedObjects; i++)
+        {
+            int burn = UnityEngine.Random.Range(0, ChildrenObject.Length);
+            GameObject ObjectToBurn = ChildrenObject[burn];
+            ObjectToBurn.GetComponent<IIgnitable>().ChangeStatus("onfire");
+            Debug.Log("Objeto quemado: "+ ChildrenObject[burn]);
+        }
+        
+
+        
     }
 
     // Update is called once per frame
@@ -37,11 +48,6 @@ public class RandomBurn : MonoBehaviour
         {
             ChildrenObject[i] = ObjetParent.transform.GetChild(i).gameObject;
         }
-    }
-
-    public void RandomFire()
-    {
-
     }
 
 }
