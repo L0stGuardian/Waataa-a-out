@@ -179,6 +179,6 @@ public class Materials : MonoBehaviour, IIgnitable
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
-        Gizmos.DrawSphere(this.transform.position, _radio);
+        Gizmos.DrawWireSphere(this.transform.position, _radio);
     }
 }
