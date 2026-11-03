@@ -140,7 +140,7 @@ public class Player : MonoBehaviour
         else { imbalanceDirection = -1f; }
 
         float randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance);
-        _targetRotationZ += (randomAngle * imbalanceDirection);
+        _targetRotationZ += (randomAngle * imbalanceDirection * _jumpStrength);
         _jumpStrength = 0f;
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Water
   - WaterInPlayer
+  - Faucet
   layers:
   - Default
   - TransparentFX
