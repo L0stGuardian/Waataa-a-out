@@ -147,11 +147,11 @@ Transform:
   m_GameObject: {fileID: 1819008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 61.82, y: -0.54, z: 0}
+  m_LocalPosition: {x: 47.52, y: -2.2346, z: 0}
   m_LocalScale: {x: 1.9686626, y: 2.0185695, z: 2.2551}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 422719115}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1819010
 MonoBehaviour:
@@ -173,7 +173,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 400
   _radio: 3.21
 --- !u!60 &1819011
 PolygonCollider2D:
@@ -339,7 +339,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 200
   _radio: 1.38
 --- !u!60 &39834648
 PolygonCollider2D:
@@ -643,7 +643,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 300
   _radio: 2.23
 --- !u!60 &168945083
 PolygonCollider2D:
@@ -1070,7 +1070,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 200
   _radio: 2.85
 --- !u!60 &236108556
 PolygonCollider2D:
@@ -1502,9 +1502,6 @@ Transform:
   - {fileID: 39834646}
   - {fileID: 168945081}
   - {fileID: 2128302471}
-  - {fileID: 1932367168}
-  - {fileID: 1211993838}
-  - {fileID: 1819009}
   - {fileID: 943322725}
   - {fileID: 1996839761}
   m_Father: {fileID: 0}
@@ -2050,7 +2047,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 200
   _radio: 1.76
 --- !u!60 &604109023
 PolygonCollider2D:
@@ -2630,7 +2627,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 50
   _radio: 2.27
 --- !u!60 &756652824
 PolygonCollider2D:
@@ -3480,7 +3477,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 250
   _radio: 1.17
 --- !u!60 &943322727
 PolygonCollider2D:
@@ -4112,11 +4109,11 @@ Transform:
   m_GameObject: {fileID: 1211993837}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.66, y: -0.2, z: 0}
+  m_LocalPosition: {x: 42.36, y: -1.8946, z: 0}
   m_LocalScale: {x: 6.952264, y: 3.4818947, z: 2.2551}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 422719115}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1211993839
 MonoBehaviour:
@@ -4138,7 +4135,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 500
   _radio: 10.6
 --- !u!60 &1211993840
 PolygonCollider2D:
@@ -6356,11 +6353,11 @@ Transform:
   m_GameObject: {fileID: 1932367167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.91, y: -0.58, z: 0}
+  m_LocalPosition: {x: 50.610004, y: -2.2746, z: 0}
   m_LocalScale: {x: 1.3374999, y: 0.81905234, z: 2.2551}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 422719115}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1932367169
 MonoBehaviour:
@@ -6382,7 +6379,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 300
   _radio: 2.74
 --- !u!60 &1932367170
 PolygonCollider2D:
@@ -6714,7 +6711,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 150
   _radio: 3.4
 --- !u!60 &1996839763
 PolygonCollider2D:
@@ -7113,7 +7110,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 300
   _radio: 5.16
 --- !u!60 &2128302473
 PolygonCollider2D:
@@ -7235,10 +7232,13 @@ SceneRoots:
   - {fileID: 525919717}
   - {fileID: 769697934}
   - {fileID: 604109025}
-  - {fileID: 236108558}
   - {fileID: 673224590}
   - {fileID: 422719115}
   - {fileID: 1940399705}
   - {fileID: 1895293080}
   - {fileID: 1816776052}
   - {fileID: 614292497}
+  - {fileID: 236108558}
+  - {fileID: 1932367168}
+  - {fileID: 1211993838}
+  - {fileID: 1819009}
