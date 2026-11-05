@@ -4479,7 +4479,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 150
   _radio: 2.39
 --- !u!60 &1279279911
 PolygonCollider2D:
@@ -4938,7 +4938,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 150
   _radio: 3.38
 --- !u!60 &1369050594
 PolygonCollider2D:
@@ -5678,7 +5678,7 @@ MonoBehaviour:
   _timeToBurnAgain: 5
   _damageRatio: 1
   _percentageToBurn: 25
-  _currentHealth: 100
+  _currentHealth: 200
   _radio: 2.77
 --- !u!60 &1617962068
 PolygonCollider2D:
