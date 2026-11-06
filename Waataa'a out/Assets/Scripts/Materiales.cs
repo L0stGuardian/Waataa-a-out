@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
 using System.Runtime.CompilerServices;
-using UnityEditor.Search;
+
 public class Materials : MonoBehaviour, IIgnitable
 {
     [SerializeField] private IIgnitable.FireStates _actualFireState = IIgnitable.FireStates.canBurn;
