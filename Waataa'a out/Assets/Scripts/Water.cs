@@ -11,6 +11,8 @@ public class Water : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (this.tag == "WaterInPlayer") { return; }
+ 
         if (collision.CompareTag("Player") || collision.CompareTag("Faucet")) { return; }
 
         this.gameObject.SetActive(false);

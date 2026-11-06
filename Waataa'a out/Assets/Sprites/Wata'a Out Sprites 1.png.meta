@@ -1,0 +1,1670 @@
+fileFormatVersion: 2
+guid: 1fc9e7b1527e77e4ca7223fdf193a59b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2001596610674281730
+    second: Wata'a Out Sprites 1_0
+  - first:
+      213: 943114474853612178
+    second: Wata'a Out Sprites 1_1
+  - first:
+      213: 2712338909696532969
+    second: Wata'a Out Sprites 1_2
+  - first:
+      213: -1338463358425082747
+    second: Wata'a Out Sprites 1_3
+  - first:
+      213: -6026839830506846726
+    second: Wata'a Out Sprites 1_4
+  - first:
+      213: -930691992418711943
+    second: Wata'a Out Sprites 1_5
+  - first:
+      213: -4975777168414443131
+    second: Wata'a Out Sprites 1_6
+  - first:
+      213: 4994928446737008917
+    second: Wata'a Out Sprites 1_7
+  - first:
+      213: 4712971991252335614
+    second: Wata'a Out Sprites 1_8
+  - first:
+      213: -8418157641151734068
+    second: Wata'a Out Sprites 1_9
+  - first:
+      213: 8913528018391864528
+    second: Wata'a Out Sprites 1_10
+  - first:
+      213: 3010013712959393740
+    second: Wata'a Out Sprites 1_11
+  - first:
+      213: 8317508858851719553
+    second: Wata'a Out Sprites 1_12
+  - first:
+      213: -5763418883607483057
+    second: Wata'a Out Sprites 1_13
+  - first:
+      213: 7586472593714702634
+    second: Wata'a Out Sprites 1_14
+  - first:
+      213: -2684016117330180911
+    second: Wata'a Out Sprites 1_15
+  - first:
+      213: 8447568740001134255
+    second: Wata'a Out Sprites 1_16
+  - first:
+      213: -581079418171814014
+    second: Wata'a Out Sprites 1_17
+  - first:
+      213: -7925943992434412261
+    second: Wata'a Out Sprites 1_18
+  - first:
+      213: 4820551348306535599
+    second: Wata'a Out Sprites 1_19
+  - first:
+      213: -6378640121445711397
+    second: Wata'a Out Sprites 1_20
+  - first:
+      213: -4529886231262840483
+    second: Wata'a Out Sprites 1_21
+  - first:
+      213: -543314288641249015
+    second: Wata'a Out Sprites 1_22
+  - first:
+      213: -6294334517962595346
+    second: Wata'a Out Sprites 1_23
+  - first:
+      213: -8322260567249200485
+    second: Wata'a Out Sprites 1_24
+  - first:
+      213: 7885856047941300354
+    second: Wata'a Out Sprites 1_25
+  - first:
+      213: -8871057425274416396
+    second: Wata'a Out Sprites 1_26
+  - first:
+      213: -7095294872115753436
+    second: Wata'a Out Sprites 1_27
+  - first:
+      213: -1980806255847790733
+    second: Wata'a Out Sprites 1_28
+  - first:
+      213: 2204045372294785558
+    second: Wata'a Out Sprites 1_29
+  - first:
+      213: 3022174409828083762
+    second: Wata'a Out Sprites 1_30
+  - first:
+      213: -4242012670910877382
+    second: Wata'a Out Sprites 1_31
+  - first:
+      213: -3170177340399452028
+    second: Wata'a Out Sprites 1_32
+  - first:
+      213: 5448504502208255438
+    second: Wata'a Out Sprites 1_33
+  - first:
+      213: 4726157780055558892
+    second: Wata'a Out Sprites 1_34
+  - first:
+      213: 565408052995148825
+    second: Wata'a Out Sprites 1_35
+  - first:
+      213: -5086372229955047369
+    second: Wata'a Out Sprites 1_36
+  - first:
+      213: 2590459819097893294
+    second: Wata'a Out Sprites 1_37
+  - first:
+      213: 6459245369717307554
+    second: Wata'a Out Sprites 1_38
+  - first:
+      213: -2335675430361020740
+    second: Wata'a Out Sprites 1_39
+  - first:
+      213: -2368113021818289396
+    second: Wata'a Out Sprites 1_40
+  - first:
+      213: -1063561882481484062
+    second: Wata'a Out Sprites 1_41
+  - first:
+      213: -4931553097601944040
+    second: Wata'a Out Sprites 1_42
+  - first:
+      213: 7332956673203990980
+    second: Wata'a Out Sprites 1_43
+  - first:
+      213: -987448013255340019
+    second: Wata'a Out Sprites 1_44
+  - first:
+      213: 1380018375926570730
+    second: Wata'a Out Sprites 1_45
+  - first:
+      213: -5858183403668111065
+    second: Wata'a Out Sprites 1_46
+  - first:
+      213: 3624779458247247451
+    second: Wata'a Out Sprites 1_47
+  - first:
+      213: -4070972623550002792
+    second: Wata'a Out Sprites 1_48
+  - first:
+      213: 926394803491533338
+    second: Wata'a Out Sprites 1_49
+  - first:
+      213: -8688573842686110999
+    second: Wata'a Out Sprites 1_50
+  - first:
+      213: 1617681387842358043
+    second: Wata'a Out Sprites 1_51
+  - first:
+      213: -2788849082536489277
+    second: Wata'a Out Sprites 1_52
+  - first:
+      213: 8184074993182632570
+    second: Wata'a Out Sprites 1_53
+  - first:
+      213: 1274582990491788497
+    second: Wata'a Out Sprites 1_54
+  - first:
+      213: 9015040247901397703
+    second: Wata'a Out Sprites 1_55
+  - first:
+      213: -9007912148186521929
+    second: Wata'a Out Sprites 1_56
+  - first:
+      213: 8254194053619936457
+    second: Wata'a Out Sprites 1_57
+  - first:
+      213: -5305643584411504839
+    second: Wata'a Out Sprites 1_58
+  - first:
+      213: -7403002986848530759
+    second: Wata'a Out Sprites 1_59
+  - first:
+      213: 4603671116078714448
+    second: Wata'a Out Sprites 1_60
+  - first:
+      213: 3429988081980613629
+    second: Wata'a Out Sprites 1_61
+  - first:
+      213: -5563504621592047194
+    second: Wata'a Out Sprites 1_62
+  - first:
+      213: -4071273123524971647
+    second: Wata'a Out Sprites 1_63
+  - first:
+      213: -1222817034621375864
+    second: Wata'a Out Sprites 1_64
+  - first:
+      213: 6654840502457240867
+    second: Wata'a Out Sprites 1_65
+  - first:
+      213: -6912936975202106557
+    second: Wata'a Out Sprites 1_66
+  - first:
+      213: -3639933654740705186
+    second: Wata'a Out Sprites 1_67
+  - first:
+      213: 48325646621775776
+    second: Wata'a Out Sprites 1_68
+  - first:
+      213: 980888003576765037
+    second: Wata'a Out Sprites 1_69
+  - first:
+      213: -1973173316802031272
+    second: Wata'a Out Sprites 1_70
+  - first:
+      213: -7193589442248002137
+    second: Wata'a Out Sprites 1_71
+  - first:
+      213: -7614280265977066705
+    second: Wata'a Out Sprites 1_72
+  - first:
+      213: -9213215741870694251
+    second: Wata'a Out Sprites 1_73
+  - first:
+      213: -2217928071883587749
+    second: Wata'a Out Sprites 1_74
+  - first:
+      213: 6963664665111303259
+    second: Wata'a Out Sprites 1_75
+  - first:
+      213: -4528609982539056357
+    second: Wata'a Out Sprites 1_76
+  - first:
+      213: -9041119697968264205
+    second: Wata'a Out Sprites 1_77
+  - first:
+      213: 5981200160682544604
+    second: Wata'a Out Sprites 1_78
+  - first:
+      213: 800431893786209750
+    second: Wata'a Out Sprites 1_79
+  - first:
+      213: 5409769019317373891
+    second: Wata'a Out Sprites 1_80
+  - first:
+      213: 3517465865169108807
+    second: Wata'a Out Sprites 1_81
+  - first:
+      213: -6858041676597665005
+    second: Wata'a Out Sprites 1_82
+  - first:
+      213: -8551448800935657040
+    second: Wata'a Out Sprites 1_83
+  - first:
+      213: -1437024378043194654
+    second: Wata'a Out Sprites 1_84
+  - first:
+      213: -203573741784193480
+    second: Wata'a Out Sprites 1_85
+  - first:
+      213: -5418545051305438816
+    second: Wata'a Out Sprites 1_86
+  - first:
+      213: -6334876245683159986
+    second: Wata'a Out Sprites 1_87
+  - first:
+      213: 159381339833161923
+    second: Wata'a Out Sprites 1_88
+  - first:
+      213: -1788069079036319276
+    second: Wata'a Out Sprites 1_89
+  - first:
+      213: 2799639878270807028
+    second: Wata'a Out Sprites 1_90
+  - first:
+      213: -7137134484391358194
+    second: Wata'a Out Sprites 1_91
+  - first:
+      213: 4254052491543472712
+    second: Wata'a Out Sprites 1_92
+  - first:
+      213: 6479278428334810857
+    second: Wata'a Out Sprites 1_93
+  - first:
+      213: -1094256805242688959
+    second: Wata'a Out Sprites 1_94
+  - first:
+      213: 6685895166613876744
+    second: Wata'a Out Sprites 1_95
+  - first:
+      213: -1636107993426623701
+    second: Wata'a Out Sprites 1_96
+  - first:
+      213: 783670935753824672
+    second: Wata'a Out Sprites 1_97
+  - first:
+      213: -8188480954727618417
+    second: Wata'a Out Sprites 1_98
+  - first:
+      213: 2761704622882620984
+    second: Wata'a Out Sprites 1_99
+  - first:
+      213: 1841475903454249419
+    second: Wata'a Out Sprites 1_100
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3879
+        width: 174
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2322dcc76e834e0800000000000000
+      internalID: -2001596610674281730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 3715
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29abd283e9d961d00800000000000000
+      internalID: 943114474853612178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_2
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 3731
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e1aee62ed924a520800000000000000
+      internalID: 2712338909696532969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_3
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3747
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5845230caa2dc6de0800000000000000
+      internalID: -1338463358425082747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_4
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 3747
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af5c6701b1d5c5ca0800000000000000
+      internalID: -6026839830506846726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_5
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 3739
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976059c50948513f0800000000000000
+      internalID: -930691992418711943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_6
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 3739
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5897823370d72fab0800000000000000
+      internalID: -4975777168414443131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 3563
+        width: 138
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519c04245fc815540800000000000000
+      internalID: 4994928446737008917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_8
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 3735
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbf5fe3e07d76140800000000000000
+      internalID: 4712971991252335614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_9
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 3563
+        width: 138
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce19e70a32bc2b80800000000000000
+      internalID: -8418157641151734068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_10
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 3715
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d41dbfb18633bb70800000000000000
+      internalID: 8913528018391864528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_11
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 3563
+        width: 130
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfcff13687b5c920800000000000000
+      internalID: 3010013712959393740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_12
+      rect:
+        serializedVersion: 2
+        x: 883
+        y: 3739
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18975043d3abd6370800000000000000
+      internalID: 8317508858851719553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_13
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 3739
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d2cceaf093400b0800000000000000
+      internalID: -5763418883607483057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_14
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 3727
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29e99e01a0984960800000000000000
+      internalID: 7586472593714702634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 3563
+        width: 126
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d48c13df8570cad0800000000000000
+      internalID: -2684016117330180911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_16
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 3563
+        width: 118
+        height: 162
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6367b030bcb3570800000000000000
+      internalID: 8447568740001134255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_17
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 3723
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f049d09579fe7f0800000000000000
+      internalID: -581079418171814014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_18
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 3563
+        width: 114
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b153e4daee3610290800000000000000
+      internalID: -7925943992434412261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_19
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 3563
+        width: 122
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4675139e906e240800000000000000
+      internalID: 4820551348306535599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_20
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 3723
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd18c23ea948a77a0800000000000000
+      internalID: -6378640121445711397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_21
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 3563
+        width: 130
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5935a8197c9221c0800000000000000
+      internalID: -4529886231262840483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_22
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 3683
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901f4287882c578f0800000000000000
+      internalID: -543314288641249015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_23
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 3671
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee32c5fca1806a8a0800000000000000
+      internalID: -6294334517962595346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_24
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 3659
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9aded87b14618c80800000000000000
+      internalID: -8322260567249200485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_25
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 3647
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28038676b40307d60800000000000000
+      internalID: 7885856047941300354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_26
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 2975
+        width: 222
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f25d68c54ca3e480800000000000000
+      internalID: -8871057425274416396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_27
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 2975
+        width: 230
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ec3e208e2788d90800000000000000
+      internalID: -7095294872115753436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_28
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 2975
+        width: 282
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 377225f7433c284e0800000000000000
+      internalID: -1980806255847790733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_29
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 2975
+        width: 234
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a697ca697569e10800000000000000
+      internalID: 2204045372294785558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_30
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 2975
+        width: 246
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23824131d9be0f920800000000000000
+      internalID: 3022174409828083762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_31
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 2975
+        width: 246
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31b6a173f75125c0800000000000000
+      internalID: -4242012670910877382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_32
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2543
+        width: 222
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4808f7651844104d0800000000000000
+      internalID: -3170177340399452028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_33
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 2543
+        width: 230
+        height: 366
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec55d333af9fc9b40800000000000000
+      internalID: 5448504502208255438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_34
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2543
+        width: 218
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea09a0f57fa69140800000000000000
+      internalID: 4726157780055558892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_35
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 2543
+        width: 298
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ccbe7e0abb8d700800000000000000
+      internalID: 565408052995148825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_36
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 2559
+        width: 246
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7303e16d7639969b0800000000000000
+      internalID: -5086372229955047369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_37
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 2559
+        width: 246
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9a04a0b7923f320800000000000000
+      internalID: 2590459819097893294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_38
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2175
+        width: 678
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a83613f079d3a950800000000000000
+      internalID: 6459245369717307554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_39
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 2175
+        width: 478
+        height: 258
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb649be2293069fd0800000000000000
+      internalID: -2335675430361020740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_40
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1611
+        width: 750
+        height: 838
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c034b82e0c5c22fd0800000000000000
+      internalID: -2368113021818289396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_41
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1711
+        width: 658
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee9b065a187d31f0800000000000000
+      internalID: -1063561882481484062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_42
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1711
+        width: 226
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8167572169a9f8bb0800000000000000
+      internalID: -4931553097601944040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_43
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 871
+        width: 714
+        height: 598
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c177ab1e35e3c560800000000000000
+      internalID: 7332956673203990980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_44
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 835
+        width: 958
+        height: 646
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0010cf7341eb42f0800000000000000
+      internalID: -987448013255340019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_45
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 595
+        width: 118
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee5d98b66fc62310800000000000000
+      internalID: 1380018375926570730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_46
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 595
+        width: 118
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721064b7b3d83bea0800000000000000
+      internalID: -5858183403668111065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_47
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 29
+        width: 210
+        height: 588
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56c5fd56bdcd4230800000000000000
+      internalID: 3624779458247247451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_90
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 23
+        width: 222
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb695bd2a15ad620800000000000000
+      internalID: 2799639878270807028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_100
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 119
+        width: 110
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc105dfd39c3e8910800000000000000
+      internalID: 1841475903454249419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wata'a Out Sprites 1_101
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 277
+        width: 535
+        height: 281
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4fcf7e579758b4c8dc12bcd510a0fa
+      internalID: -751321291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 435ab88f8541bc04f9aa14021c68237d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wata'a Out Sprites 1_0: -2001596610674281730
+      Wata'a Out Sprites 1_1: 943114474853612178
+      Wata'a Out Sprites 1_10: 8913528018391864528
+      Wata'a Out Sprites 1_100: 1841475903454249419
+      Wata'a Out Sprites 1_101: -751321291
+      Wata'a Out Sprites 1_11: 3010013712959393740
+      Wata'a Out Sprites 1_12: 8317508858851719553
+      Wata'a Out Sprites 1_13: -5763418883607483057
+      Wata'a Out Sprites 1_14: 7586472593714702634
+      Wata'a Out Sprites 1_15: -2684016117330180911
+      Wata'a Out Sprites 1_16: 8447568740001134255
+      Wata'a Out Sprites 1_17: -581079418171814014
+      Wata'a Out Sprites 1_18: -7925943992434412261
+      Wata'a Out Sprites 1_19: 4820551348306535599
+      Wata'a Out Sprites 1_2: 2712338909696532969
+      Wata'a Out Sprites 1_20: -6378640121445711397
+      Wata'a Out Sprites 1_21: -4529886231262840483
+      Wata'a Out Sprites 1_22: -543314288641249015
+      Wata'a Out Sprites 1_23: -6294334517962595346
+      Wata'a Out Sprites 1_24: -8322260567249200485
+      Wata'a Out Sprites 1_25: 7885856047941300354
+      Wata'a Out Sprites 1_26: -8871057425274416396
+      Wata'a Out Sprites 1_27: -7095294872115753436
+      Wata'a Out Sprites 1_28: -1980806255847790733
+      Wata'a Out Sprites 1_29: 2204045372294785558
+      Wata'a Out Sprites 1_3: -1338463358425082747
+      Wata'a Out Sprites 1_30: 3022174409828083762
+      Wata'a Out Sprites 1_31: -4242012670910877382
+      Wata'a Out Sprites 1_32: -3170177340399452028
+      Wata'a Out Sprites 1_33: 5448504502208255438
+      Wata'a Out Sprites 1_34: 4726157780055558892
+      Wata'a Out Sprites 1_35: 565408052995148825
+      Wata'a Out Sprites 1_36: -5086372229955047369
+      Wata'a Out Sprites 1_37: 2590459819097893294
+      Wata'a Out Sprites 1_38: 6459245369717307554
+      Wata'a Out Sprites 1_39: -2335675430361020740
+      Wata'a Out Sprites 1_4: -6026839830506846726
+      Wata'a Out Sprites 1_40: -2368113021818289396
+      Wata'a Out Sprites 1_41: -1063561882481484062
+      Wata'a Out Sprites 1_42: -4931553097601944040
+      Wata'a Out Sprites 1_43: 7332956673203990980
+      Wata'a Out Sprites 1_44: -987448013255340019
+      Wata'a Out Sprites 1_45: 1380018375926570730
+      Wata'a Out Sprites 1_46: -5858183403668111065
+      Wata'a Out Sprites 1_47: 3624779458247247451
+      Wata'a Out Sprites 1_48: -4070972623550002792
+      Wata'a Out Sprites 1_49: 926394803491533338
+      Wata'a Out Sprites 1_5: -930691992418711943
+      Wata'a Out Sprites 1_50: -8688573842686110999
+      Wata'a Out Sprites 1_51: 1617681387842358043
+      Wata'a Out Sprites 1_52: -2788849082536489277
+      Wata'a Out Sprites 1_53: 8184074993182632570
+      Wata'a Out Sprites 1_54: 1274582990491788497
+      Wata'a Out Sprites 1_55: 9015040247901397703
+      Wata'a Out Sprites 1_56: -9007912148186521929
+      Wata'a Out Sprites 1_57: 8254194053619936457
+      Wata'a Out Sprites 1_58: -5305643584411504839
+      Wata'a Out Sprites 1_59: -7403002986848530759
+      Wata'a Out Sprites 1_6: -4975777168414443131
+      Wata'a Out Sprites 1_60: 4603671116078714448
+      Wata'a Out Sprites 1_61: 3429988081980613629
+      Wata'a Out Sprites 1_62: -5563504621592047194
+      Wata'a Out Sprites 1_63: -4071273123524971647
+      Wata'a Out Sprites 1_64: -1222817034621375864
+      Wata'a Out Sprites 1_65: 6654840502457240867
+      Wata'a Out Sprites 1_66: -6912936975202106557
+      Wata'a Out Sprites 1_67: -3639933654740705186
+      Wata'a Out Sprites 1_68: 48325646621775776
+      Wata'a Out Sprites 1_69: 980888003576765037
+      Wata'a Out Sprites 1_7: 4994928446737008917
+      Wata'a Out Sprites 1_70: -1973173316802031272
+      Wata'a Out Sprites 1_71: -7193589442248002137
+      Wata'a Out Sprites 1_72: -7614280265977066705
+      Wata'a Out Sprites 1_73: -9213215741870694251
+      Wata'a Out Sprites 1_74: -2217928071883587749
+      Wata'a Out Sprites 1_75: 6963664665111303259
+      Wata'a Out Sprites 1_76: -4528609982539056357
+      Wata'a Out Sprites 1_77: -9041119697968264205
+      Wata'a Out Sprites 1_78: 5981200160682544604
+      Wata'a Out Sprites 1_79: 800431893786209750
+      Wata'a Out Sprites 1_8: 4712971991252335614
+      Wata'a Out Sprites 1_80: 5409769019317373891
+      Wata'a Out Sprites 1_81: 3517465865169108807
+      Wata'a Out Sprites 1_82: -6858041676597665005
+      Wata'a Out Sprites 1_83: -8551448800935657040
+      Wata'a Out Sprites 1_84: -1437024378043194654
+      Wata'a Out Sprites 1_85: -203573741784193480
+      Wata'a Out Sprites 1_86: -5418545051305438816
+      Wata'a Out Sprites 1_87: -6334876245683159986
+      Wata'a Out Sprites 1_88: 159381339833161923
+      Wata'a Out Sprites 1_89: -1788069079036319276
+      Wata'a Out Sprites 1_9: -8418157641151734068
+      Wata'a Out Sprites 1_90: 2799639878270807028
+      Wata'a Out Sprites 1_91: -7137134484391358194
+      Wata'a Out Sprites 1_92: 4254052491543472712
+      Wata'a Out Sprites 1_93: 6479278428334810857
+      Wata'a Out Sprites 1_94: -1094256805242688959
+      Wata'a Out Sprites 1_95: 6685895166613876744
+      Wata'a Out Sprites 1_96: -1636107993426623701
+      Wata'a Out Sprites 1_97: 783670935753824672
+      Wata'a Out Sprites 1_98: -8188480954727618417
+      Wata'a Out Sprites 1_99: 2761704622882620984
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
