@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private float _maxJumpStrength = 5f;
+    [SerializeField] private float _maxJumpStrength = 5f; // Sin abreviaciones
     [Tooltip("Modifies the velocity at which the jump strength increases")]
     [SerializeField] private float _jumpStrengthModifier = 5;
     [SerializeField] private Rigidbody2D _playerRigidBody;
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
     [Header("OverlapCircle")]
     [SerializeField] private GameObject _overlapCenter; 
 
-    [Tooltip ("Radio of the collision check")] [SerializeField] private float _radio;
+    [Tooltip ("Radio of the collision check")] [SerializeField] private float _radio; // Usar inglés | Respetar el orden de los miembros
     [SerializeField] private LayerMask _ground;
     private void OnEnable()
     {

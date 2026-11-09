@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
@@ -14,10 +16,10 @@ public class Materials : MonoBehaviour, IIgnitable
 
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
-    [SerializeField] private bool _isOnFire;
+    [SerializeField] private bool _isOnFire; // Respetar el orden de los miembros
     [SerializeField] private bool _canBurn;
-    [SerializeField] private float _timerToBurnAgain;
-    [SerializeField] private float _timeToBurnAgain = 5f;
+    [SerializeField] private float _timerToBurnAgain; // Respetar el orden de los miembros
+    [SerializeField] private float _timeToBurnAgain = 5f; // Respetar el orden de los miembros
     public float TimerToBurn
     {
         get { return _timerToBurnAgain; }
@@ -31,9 +33,9 @@ public class Materials : MonoBehaviour, IIgnitable
     [Header("References")]
     public int MaxHealth { get; } = 100;
     [Tooltip("Ratio for the fire to deal damage")] 
-    [SerializeField] private float _damageRatio = 1f;
+    [SerializeField] private float _damageRatio = 1f; // Respetar el orden de los miembros
     [Tooltip("Limit at which the object will spread the fire")]
-    [SerializeField] private int _percentageToBurn = 25;
+    [SerializeField] private int _percentageToBurn = 25; // Respetar el orden de los miembros
     [SerializeField] private int _currentHealth;
 
     private float _timer = 0f;
@@ -48,8 +50,8 @@ public class Materials : MonoBehaviour, IIgnitable
     [Header("Settings")]
 
     [Tooltip ("Radio of the afected area to burn")] 
-    [SerializeField] private float _radio;
-    private Renderer _objectRenderer;
+    [SerializeField] private float _radio; // Usar inglés | Respetar el orden de los miembros
+    private Renderer _objectRenderer; // Respetar el orden de los miembros
     public int CurrentHealth
     {
         get { return _currentHealth; }
@@ -171,7 +173,7 @@ public class Materials : MonoBehaviour, IIgnitable
         }
     }
 
-    public void EstablishFireDamage(int fireDamage)
+    public void EstablishFireDamage(int fireDamage) // Respetar el orden de acceso y static
     {
         _fireDamage = fireDamage;
     }
