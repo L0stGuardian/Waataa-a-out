@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Camera_Follow : MonoBehaviour // Usar PascalCase
+public class CameraFollow : MonoBehaviour
 {
     [Header("Target Settings")]
     [Tooltip("Drag your Player GameObject here, or leave unassigned to auto-find by tag/name.")]
