@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class RandomBurn : MonoBehaviour
 {
-    public GameObject ObjetParent;
+    public GameObject ObjetParent; // Corregir la ortografía de ObjetParent
 
     public GameObject[] ChildrenObject;
 
-    [SerializeField]private int _maxOfBurned;
+    [SerializeField]private int _maxOfBurned; // Sin abreviaciones
     
 
     private void Awake()
@@ -25,7 +25,7 @@ public class RandomBurn : MonoBehaviour
         for (int i = 0; i <= burnedObjects; i++)
         {
             int burn = UnityEngine.Random.Range(0, ChildrenObject.Length);
-            GameObject ObjectToBurn = ChildrenObject[burn];
+            GameObject ObjectToBurn = ChildrenObject[burn]; // Usar camelCase sin _
             ObjectToBurn.GetComponent<IIgnitable>().ChangeStatus("onfire");
             Debug.Log("Objeto quemado: "+ ChildrenObject[burn]);
         }

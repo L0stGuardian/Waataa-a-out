@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private float _maxJumpStrength = 5f;
+    [SerializeField] private float _maximumJumpStrength = 5f;
     [Tooltip("Modifies the velocity at which the jump strength increases")]
     [SerializeField] private float _jumpStrengthModifier = 5;
     [SerializeField] private Rigidbody2D _playerRigidBody;
@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
     private Vector2 _moveValue;
 
-    private bool _onGround => Physics2D.OverlapCircle(_overlapCenter.transform.position, _radio, _ground);
+    private bool _onGround => Physics2D.OverlapCircle(_overlapCenter.transform.position, _radius, _ground);
 
 
     [Header("Rotation")]
@@ -47,9 +47,9 @@ public class Player : MonoBehaviour
 
 
     [Header("OverlapCircle")]
+    [Tooltip ("Radio of the collision check")] 
+    [SerializeField] private float _radius;
     [SerializeField] private GameObject _overlapCenter; 
-
-    [Tooltip ("Radio of the collision check")] [SerializeField] private float _radio;
     [SerializeField] private LayerMask _ground;
     private void OnEnable()
     {
@@ -70,7 +70,7 @@ public class Player : MonoBehaviour
         _playerRigidBody = GetComponent<Rigidbody2D>();
 
         _jumpSlider.minValue = 0f;
-        _jumpSlider.maxValue = _maxJumpStrength;
+        _jumpSlider.maxValue = _maximumJumpStrength;
         _jumpSlider.interactable = false;
         _jumpSlider.value = 0;
         ActivateAndDeactivateSlider(false);
@@ -154,7 +154,7 @@ public class Player : MonoBehaviour
     private void CalculateJumpStrength()
     {
             _jumpStrength += Time.deltaTime * _jumpStrengthModifier;
-            _jumpStrength = Mathf.Clamp(_jumpStrength, 0, _maxJumpStrength);
+            _jumpStrength = Mathf.Clamp(_jumpStrength, 0, _maximumJumpStrength);
     }
     
     private void CalculateStrengthSlider()
@@ -170,6 +170,6 @@ public class Player : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(_overlapCenter.transform.position, _radio);
+        Gizmos.DrawSphere(_overlapCenter.transform.position, _radius);
     }
 }

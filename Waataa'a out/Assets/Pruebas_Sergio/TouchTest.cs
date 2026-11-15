@@ -1,3 +1,5 @@
+// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -18,7 +20,7 @@ public class TouchTest : MonoBehaviour
     [Header("OverlapCircle")]
     [SerializeField] private GameObject _overlapCenter; 
     [SerializeField] private LayerMask _ground; 
-    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radio; 
+    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radio;  // Usar inglés | Respetar el orden de los miembros
 
     [Header("Screen")]
     private int _screenWidth = Screen.width;
@@ -38,8 +40,8 @@ public class TouchTest : MonoBehaviour
     [SerializeField] private float _smoothRotationSpeed = 100f; 
     [SerializeField] private float _rotationSpeed = 100f; 
     [SerializeField] private float _maxRandomImbalance = 120f;
-    private const float _jumpLeftDirection = -1f;
-    private const float _jumpRightDirection = 1f;
+    private const float _jumpLeftDirection = -1f; // Respetar el orden de los miembros
+    private const float _jumpRightDirection = 1f; // Respetar el orden de los miembros
 
 
     private void OnEnable()
@@ -61,7 +63,7 @@ public class TouchTest : MonoBehaviour
 
     private void Update()
     {
-        int HalfScreen = _screenWidth / 2; 
+        int HalfScreen = _screenWidth / 2;  // Usar camelCase sin _
         if (Touchscreen.current == null) { return; }
         if (!Touchscreen.current.primaryTouch.press.isPressed) { return; }
         Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue(); 
@@ -136,7 +138,7 @@ public class TouchTest : MonoBehaviour
 
     private void Rotate()
     {
-        Quaternion Rotation = Quaternion.Euler(0f, 0f, _targetRotationZ); 
+        Quaternion Rotation = Quaternion.Euler(0f, 0f, _targetRotationZ);  // Usar camelCase sin _
 
         this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Rotation, _smoothRotationSpeed * Time.deltaTime);
     }

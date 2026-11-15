@@ -4,5 +4,5 @@ public enum AudioMixMode
 {
     LinearAudioSourceVolume,
     LinearMixerVolume,
-    LogrithmicMixerVolume
+    LogrithmicMixerVolume // Corregir la ortografía de LogrithmicMixerVolume
 }
