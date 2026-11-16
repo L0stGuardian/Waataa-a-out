@@ -16,10 +16,10 @@ public class Materials : MonoBehaviour, IIgnitable
 
     [Header("Fire")]
     [SerializeField] private int _fireDamage;
-    [SerializeField] private bool _isOnFire; // Respetar el orden de los miembros
+    [SerializeField] private float _timerToBurnAgain;
+    [SerializeField] private float _timeToBurnAgain = 5f;
+    [SerializeField] private bool _isOnFire; 
     [SerializeField] private bool _canBurn;
-    [SerializeField] private float _timerToBurnAgain; // Respetar el orden de los miembros
-    [SerializeField] private float _timeToBurnAgain = 5f; // Respetar el orden de los miembros
     public float TimerToBurn
     {
         get { return _timerToBurnAgain; }
@@ -31,14 +31,16 @@ public class Materials : MonoBehaviour, IIgnitable
     }
 
     [Header("References")]
-    public int MaxHealth { get; } = 100;
+    public int MaxHealth { get; private set; }
     [SerializeField] private int _currentHealth;
 
     [Tooltip("Limit at which the object will spread the fire")]
-    [SerializeField] private int _percentageToBurn = 25;
+    [SerializeField] private int _percentageToIgnite = 25;
 
     [Tooltip("Ratio for the fire to deal damage")] 
-    [SerializeField] private float _damageRatio = 1f; 
+    [SerializeField] private float _damageRatio = 1f;
+    [SerializeField] private Material _material;
+    
 
     private float _timer = 0f;
     private float _lifePercentage;
@@ -61,6 +63,11 @@ public class Materials : MonoBehaviour, IIgnitable
     }
     void Awake()
     {
+        MaxHealth = _material.MaxHealth;
+        _fireDamage = _material.FireDamage;
+        _percentageToIgnite = _material.PercentageToIgnite;
+        _timeToBurnAgain = _material.TimeToBurn;
+
         _currentHealth = MaxHealth;
         _lifePercentage = (_currentHealth * 100) / MaxHealth;
         _water = LayerMask.GetMask("Water");
@@ -81,7 +88,7 @@ public class Materials : MonoBehaviour, IIgnitable
 
         if (_currentHealth == 0 && _actualFireState != FireState.Extinguished) { ChangeStatus("extinguished"); }
 
-        if (_currentHealth > 0 && _lifePercentage <= _percentageToBurn && _actualFireState == FireState.OnFire) { PassFire(); }
+        if (_currentHealth > 0 && _lifePercentage <= _percentageToIgnite && _actualFireState == FireState.OnFire) { PassFire(); }
 
         if (_actualFireState == FireState.WaitingToBurnAgain) { _timerToBurnAgain += Time.deltaTime; }
 
