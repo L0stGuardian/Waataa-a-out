@@ -167,14 +167,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 400
-  _radio: 3.21
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1819011
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -333,14 +334,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 200
-  _radio: 1.38
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &39834648
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -637,14 +639,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 300
-  _radio: 2.23
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &168945083
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1064,14 +1067,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 0
   _fireDamage: 4
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 200
-  _radio: 2.85
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &236108556
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1418,6 +1422,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350185904}
   m_CullTransparentMesh: 1
+--- !u!114 &386800790 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2753457658065940337, guid: d0140b35c2a43cc428776a84a4c23305, type: 3}
+  m_PrefabInstance: {fileID: 1816776052}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &409220853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2133,14 +2148,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 4
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 200
-  _radio: 1.76
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &604109023
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2729,14 +2745,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 4
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 50
-  _radio: 2.27
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &756652824
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2880,14 +2897,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 0
   _fireDamage: 4
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 100
-  _radio: 1.76
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &769697932
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3579,14 +3597,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 250
-  _radio: 1.17
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &943322727
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4237,14 +4256,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 500
-  _radio: 10.6
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1211993840
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4581,14 +4601,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 3
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 150
-  _radio: 2.39
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1279279911
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5040,14 +5061,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 3
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 150
-  _radio: 3.38
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1369050594
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5827,14 +5849,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 1
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 200
-  _radio: 2.77
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1617962068
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6189,6 +6212,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8651589242131771220, guid: d0140b35c2a43cc428776a84a4c23305, type: 3}
+      propertyPath: _jumpSlider
+      value: 
+      objectReference: {fileID: 386800790}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6536,14 +6563,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 300
-  _radio: 2.74
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1932367170
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6687,14 +6715,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 100
-  _radio: 0.73
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1940399703
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6868,14 +6897,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 150
-  _radio: 3.4
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &1996839763
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7267,14 +7297,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Materiales
   _actualFireState: 2
   _fireDamage: 5
-  _isOnFire: 0
-  _canBurn: 1
   _timerToBurnAgain: 0
   _timeToBurnAgain: 5
-  _damageRatio: 1
-  _percentageToBurn: 25
+  _isOnFire: 0
+  _canBurn: 1
   _currentHealth: 300
-  _radio: 5.16
+  _percentageToIgnite: 25
+  _damageRatio: 1
+  _material: {fileID: 0}
+  _radius: 0
 --- !u!60 &2128302473
 PolygonCollider2D:
   m_ObjectHideFlags: 0

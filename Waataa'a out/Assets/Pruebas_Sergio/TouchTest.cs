@@ -3,24 +3,29 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class TouchTest : MonoBehaviour
 {
     [Header("References")]
+    [SerializeField] private float _maximumJumpStrength = 5f;
+    [Tooltip("Modifies the velocity at which the jump strength increases")]
+    [SerializeField] private float _jumpStrengthModifier = 5;
     [SerializeField] private Rigidbody2D _playerRigidBody;
     [SerializeField] private Animator _playerAnimator;
     [SerializeField] private InputActionAsset _playerInputActions;
     [SerializeField] private Collider2D _triggerColliderWater;
-    
+    [SerializeField] private Slider _jumpSlider;
+
     [Header("Movement")]
     private Vector2 _moveValue;
     [SerializeField] private float _jumpStrength = 6f;
-    private bool _onGround => Physics2D.OverlapCircle(_overlapCenter.transform.position, _radio, _ground);
+    private bool _onGround => Physics2D.OverlapCircle(_overlapCenter.transform.position, _radius, _ground);
 
     [Header("OverlapCircle")]
     [SerializeField] private GameObject _overlapCenter; 
     [SerializeField] private LayerMask _ground; 
-    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radio;  // Usar inglés | Respetar el orden de los miembros
+    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radius;  // Usar inglés | Respetar el orden de los miembros
 
     [Header("Screen")]
     private int _screenWidth = Screen.width;
@@ -36,12 +41,13 @@ public class TouchTest : MonoBehaviour
         get { return _rotationSpeed; }
         set { _rotationSpeed = value; }
     }
-    private float _targetRotationZ = 0.2f; 
+    private float _targetRotationZ = 0.2f;
+
+    private const float _jumpLeftDirection = -1f; 
+    private const float _jumpRightDirection = 1f; 
     [SerializeField] private float _smoothRotationSpeed = 100f; 
     [SerializeField] private float _rotationSpeed = 100f; 
     [SerializeField] private float _maxRandomImbalance = 120f;
-    private const float _jumpLeftDirection = -1f; // Respetar el orden de los miembros
-    private const float _jumpRightDirection = 1f; // Respetar el orden de los miembros
 
 
     private void OnEnable()
@@ -58,6 +64,14 @@ public class TouchTest : MonoBehaviour
     {
         _playerAnimator = GetComponent<Animator>();
         _playerRigidBody = GetComponent<Rigidbody2D>();
+
+        _jumpSlider.minValue = 0f;
+        _jumpSlider.maxValue = _maximumJumpStrength;
+        _jumpSlider.interactable = false;
+        _jumpSlider.value = 0;
+        ActivateAndDeactivateSlider(false);
+
+        _jumpStrength = 0f;
     }
 
 
@@ -73,27 +87,29 @@ public class TouchTest : MonoBehaviour
             return;
         }
 
-        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame && touchPosition.x > 0 && touchPosition.x < HalfScreen && _onGround)
+        if (Touchscreen.current.primaryTouch.press.IsPressed())
         {
-            Jump(_jumpLeftDirection);
-        }
-        if (Touchscreen.current.primaryTouch.press.wasPressedThisFrame && touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && _onGround)
-        {
-            Jump(_jumpRightDirection);
-        }
-        if (touchPosition.x > 0 && touchPosition.x < HalfScreen && !_onGround)
-        {
-            _targetRotationZ += _rotationSpeed * Time.deltaTime;
-        }
-        if (touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && !_onGround)
-        {
-            _targetRotationZ += -_rotationSpeed * Time.deltaTime;
+            CalculateJumpStrength();
+            ActivateAndDeactivateSlider(true);
+            CalculateStrengthSlider();
         }
 
-        if (_onGround)
+
+        if (Touchscreen.current.primaryTouch.press.wasReleasedThisFrame && touchPosition.x > 0 && touchPosition.x < HalfScreen && _onGround)
         {
-            _targetRotationZ = 0f;
+            Jump(_jumpLeftDirection);
+            ActivateAndDeactivateSlider(false);
         }
+        if (Touchscreen.current.primaryTouch.press.wasReleasedThisFrame && touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && _onGround)
+        {
+            Jump(_jumpRightDirection);
+            ActivateAndDeactivateSlider(false);
+        }
+        if (touchPosition.x > 0 && touchPosition.x < HalfScreen && !_onGround) {_targetRotationZ += _rotationSpeed * Time.deltaTime;}
+
+        if (touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && !_onGround) {_targetRotationZ += -_rotationSpeed * Time.deltaTime;}
+
+        if (_onGround) { _targetRotationZ = 0f; }
 
         Rotate();
     }
@@ -108,10 +124,7 @@ public class TouchTest : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision) 
     {
-        if (collision.CompareTag("Water"))
-        {
-            collision.tag = "WaterInPlayer";
-        }
+        if (collision.CompareTag("Water")) { collision.tag = "WaterInPlayer";}
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -123,32 +136,48 @@ public class TouchTest : MonoBehaviour
     }
     private void Jump(float direction = 0)
     {
-        _moveValue = new Vector2(direction, 0f);
         float targetHorizontalSpeed = _moveValue.x * _jumpStrength;
         _playerRigidBody.linearVelocity = new Vector2(targetHorizontalSpeed, 0f);
         _playerRigidBody.AddForce(Vector2.up * _jumpStrength, ForceMode2D.Impulse);
 
-        float imbalanceDirection = direction;
+        float imbalanceDirection;
+        if (_moveValue.x > 0.01f) { imbalanceDirection = 1f; }
 
+        else { imbalanceDirection = -1f; }
 
-        float randomAngle = UnityEngine.Random.Range(1f, _maxRandomImbalance);
-        _targetRotationZ += (randomAngle * imbalanceDirection);
-    
+        float randomAngle = Random.Range(1f, _maxRandomImbalance);
+        _targetRotationZ += (randomAngle * imbalanceDirection * _jumpStrength);
+        _jumpStrength = 0f;
+
     }
 
     private void Rotate()
     {
-        Quaternion Rotation = Quaternion.Euler(0f, 0f, _targetRotationZ);  // Usar camelCase sin _
+        Quaternion rotation = Quaternion.Euler(0f, 0f, _targetRotationZ);
 
-        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Rotation, _smoothRotationSpeed * Time.deltaTime);
+        this.transform.rotation = Quaternion.Slerp(this.transform.rotation, rotation, _smoothRotationSpeed * Time.deltaTime);
     }
 
-    
-   
+    private void CalculateJumpStrength()
+    {
+        _jumpStrength += Time.deltaTime * _jumpStrengthModifier;
+        _jumpStrength = Mathf.Clamp(_jumpStrength, 0, _maximumJumpStrength);
+    }
+
+    private void CalculateStrengthSlider()
+    {
+        _jumpSlider.value = _jumpStrength;
+    }
+
+    private void ActivateAndDeactivateSlider(bool isActive)
+    {
+        _jumpSlider.gameObject.SetActive(isActive);
+    }
+
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawSphere(_overlapCenter.transform.position, _radio);
+        Gizmos.DrawSphere(_overlapCenter.transform.position, _radius);
     }
 }
