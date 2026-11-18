@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class RandomBurn : MonoBehaviour
 {
-    public GameObject ObjetParent; // Corregir la ortografía de ObjetParent
+    public GameObject ObjectParent; 
 
     public GameObject[] ChildrenObject;
 
-    [SerializeField]private int _maxOfBurned; // Sin abreviaciones
+    [SerializeField]private int _maximimAllowedOfBurnedObjects; 
     
 
     private void Awake()
@@ -21,12 +21,12 @@ public class RandomBurn : MonoBehaviour
     void Start()
     {
         
-        int burnedObjects = UnityEngine.Random.Range(1, _maxOfBurned);
+        int burnedObjects = UnityEngine.Random.Range(1, _maximimAllowedOfBurnedObjects);
         for (int i = 0; i <= burnedObjects; i++)
         {
             int burn = UnityEngine.Random.Range(0, ChildrenObject.Length);
-            GameObject ObjectToBurn = ChildrenObject[burn]; // Usar camelCase sin _
-            ObjectToBurn.GetComponent<IIgnitable>().ChangeStatus("onfire");
+            GameObject objectToBurn = ChildrenObject[burn]; 
+            objectToBurn.GetComponent<IIgnitable>().ChangeStatus("onfire");
             Debug.Log("Objeto quemado: "+ ChildrenObject[burn]);
         }
         
@@ -34,7 +34,7 @@ public class RandomBurn : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+  
     void Update()
     {
 
@@ -42,11 +42,11 @@ public class RandomBurn : MonoBehaviour
 
     public void CheckChildren()
     {
-        ChildrenObject = new GameObject[ObjetParent.transform.childCount];
+        ChildrenObject = new GameObject[ObjectParent.transform.childCount];
 
         for (int i = 0; i < ChildrenObject.Length; i++)
         {
-            ChildrenObject[i] = ObjetParent.transform.GetChild(i).gameObject;
+            ChildrenObject[i] = ObjectParent.transform.GetChild(i).gameObject;
         }
     }
 

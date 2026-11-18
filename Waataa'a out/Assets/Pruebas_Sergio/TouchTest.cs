@@ -1,5 +1,3 @@
-// Sugerencia general de Clean Code: usar if de una sola línea con llaves cuando sea legible.
-
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -25,7 +23,7 @@ public class TouchTest : MonoBehaviour
     [Header("OverlapCircle")]
     [SerializeField] private GameObject _overlapCenter; 
     [SerializeField] private LayerMask _ground; 
-    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radius;  // Usar inglés | Respetar el orden de los miembros
+    [Tooltip("The size of the circle to analyse if is on ground")][SerializeField] private float _radius;  
 
     [Header("Screen")]
     private int _screenWidth = Screen.width;
@@ -77,7 +75,7 @@ public class TouchTest : MonoBehaviour
 
     private void Update()
     {
-        int HalfScreen = _screenWidth / 2;  // Usar camelCase sin _
+        int halfScreen = _screenWidth / 2;  
         if (Touchscreen.current == null) { return; }
         if (!Touchscreen.current.primaryTouch.press.isPressed) { return; }
         Vector2 touchPosition = Touchscreen.current.primaryTouch.position.ReadValue(); 
@@ -87,7 +85,7 @@ public class TouchTest : MonoBehaviour
             return;
         }
 
-        if (Touchscreen.current.primaryTouch.press.IsPressed())
+        if (Touchscreen.current.primaryTouch.press.isPressed && _onGround)
         {
             CalculateJumpStrength();
             ActivateAndDeactivateSlider(true);
@@ -95,19 +93,19 @@ public class TouchTest : MonoBehaviour
         }
 
 
-        if (Touchscreen.current.primaryTouch.press.wasReleasedThisFrame && touchPosition.x > 0 && touchPosition.x < HalfScreen && _onGround)
+        if (Touchscreen.current.primaryTouch.press.wasReleasedThisFrame && touchPosition.x > 0 && touchPosition.x < halfScreen && _onGround)
         {
             Jump(_jumpLeftDirection);
             ActivateAndDeactivateSlider(false);
         }
-        if (Touchscreen.current.primaryTouch.press.wasReleasedThisFrame && touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && _onGround)
+        if (Touchscreen.current.primaryTouch.press.wasReleasedThisFrame && touchPosition.x >= halfScreen && touchPosition.x < _screenWidth && _onGround)
         {
             Jump(_jumpRightDirection);
             ActivateAndDeactivateSlider(false);
         }
-        if (touchPosition.x > 0 && touchPosition.x < HalfScreen && !_onGround) {_targetRotationZ += _rotationSpeed * Time.deltaTime;}
+        if (touchPosition.x > 0 && touchPosition.x < halfScreen && !_onGround) {_targetRotationZ += _rotationSpeed * Time.deltaTime;}
 
-        if (touchPosition.x >= HalfScreen && touchPosition.x < _screenWidth && !_onGround) {_targetRotationZ += -_rotationSpeed * Time.deltaTime;}
+        if (touchPosition.x >= halfScreen && touchPosition.x < _screenWidth && !_onGround) {_targetRotationZ += -_rotationSpeed * Time.deltaTime;}
 
         if (_onGround) { _targetRotationZ = 0f; }
 

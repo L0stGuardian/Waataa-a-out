@@ -1498,9 +1498,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22a6513c16e4414cb12ec30c561ee73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomBurn
-  ObjetParent: {fileID: 422719113}
+  ObjectParent: {fileID: 422719113}
   ChildrenObject: []
-  _maxOfBurned: 5
+  _maximimAllowedOfBurnedObjects: 0
 --- !u!4 &422719115
 Transform:
   m_ObjectHideFlags: 0
@@ -2348,9 +2348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22a6513c16e4414cb12ec30c561ee73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomBurn
-  ObjetParent: {fileID: 673224588}
+  ObjectParent: {fileID: 673224588}
   ChildrenObject: []
-  _maxOfBurned: 3
+  _maximimAllowedOfBurnedObjects: 5
 --- !u!4 &673224590
 Transform:
   m_ObjectHideFlags: 0
@@ -6208,9 +6208,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5798591400088025029, guid: d0140b35c2a43cc428776a84a4c23305, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7080000893093199682, guid: d0140b35c2a43cc428776a84a4c23305, type: 3}
       propertyPath: m_SortingOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8651589242131771220, guid: d0140b35c2a43cc428776a84a4c23305, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8651589242131771220, guid: d0140b35c2a43cc428776a84a4c23305, type: 3}
       propertyPath: _jumpSlider
