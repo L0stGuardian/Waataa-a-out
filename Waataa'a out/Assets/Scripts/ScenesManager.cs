@@ -22,8 +22,11 @@ public class ScenesManager : MonoBehaviour
 
     public void LoadLevel2() // Sin abreviaciones
     {
-        SceneManager.LoadScene("LVL2");
-        Time.timeScale = 1f;
+        if(JsonConverter.Instance.PlayerInfo.canAccessSecondLevel)
+        {
+            SceneManager.LoadScene("LVL2");
+            Time.timeScale = 1f;
+        }
     }
    
     public void LoadMenu()
