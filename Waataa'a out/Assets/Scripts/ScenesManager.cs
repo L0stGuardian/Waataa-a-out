@@ -5,12 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D collision)
+    public static ScenesManager Instance;
+
+    private void Awake()
     {
-        if (collision.CompareTag("Player"))
-        {
-            LoadLevel2();
-        }
+        if (Instance == null) { Instance = this; }
+        else if (Instance != this) { Destroy(this.gameObject); }
     }
 
     public void LoadLevel1()

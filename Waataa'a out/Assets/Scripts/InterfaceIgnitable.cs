@@ -8,5 +8,5 @@ public interface IIgnitable
     int FireDamage { get; }
     void DealFireDamage();
     void PassFire();
-    void ChangeStatus(string fireState);
+    void ChangeStatus(FireState fireState);
 }

@@ -26,7 +26,7 @@ public class RandomBurn : MonoBehaviour
         {
             int burn = UnityEngine.Random.Range(0, ChildrenObject.Length);
             GameObject objectToBurn = ChildrenObject[burn]; 
-            objectToBurn.GetComponent<IIgnitable>().ChangeStatus("onfire");
+            objectToBurn.GetComponent<IIgnitable>().ChangeStatus(FireState.OnFire);
             Debug.Log("Objeto quemado: "+ ChildrenObject[burn]);
         }
         

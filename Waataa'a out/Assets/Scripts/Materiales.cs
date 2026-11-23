@@ -86,7 +86,7 @@ public class Materials : MonoBehaviour, IIgnitable
             _timer = 0f;
         }
 
-        if (_currentHealth == 0 && _actualFireState != FireState.Extinguished) { ChangeStatus("extinguished"); }
+        if (_currentHealth == 0 && _actualFireState != FireState.Extinguished) { ChangeStatus(FireState.Extinguished); }
 
         if (_currentHealth > 0 && _lifePercentage <= _percentageToIgnite && _actualFireState == FireState.OnFire) { PassFire(); }
 
@@ -94,7 +94,7 @@ public class Materials : MonoBehaviour, IIgnitable
 
         if (_timerToBurnAgain >= _timeToBurnAgain) 
         { 
-            ChangeStatus("canburn"); 
+            ChangeStatus(FireState.CanBurn); 
             _timerToBurnAgain = 0f;
         }
 
@@ -105,7 +105,7 @@ public class Materials : MonoBehaviour, IIgnitable
     {
         if (collision.CompareTag("Water") && _actualFireState == FireState.OnFire)
         {
-            ChangeStatus("waiting");
+            ChangeStatus(FireState.WaitingToBurnAgain);
         }
     }
 
@@ -127,29 +127,31 @@ public class Materials : MonoBehaviour, IIgnitable
 
             if (ReferenceEquals(ignitable, this)) { continue; }
             
-            if (ignitable != null && ignitableTargets.Add(ignitable)) { if (ignitable.ActualFireState == FireState.CanBurn) { ignitable.ChangeStatus("onfire"); } }
+            if (ignitable != null && ignitableTargets.Add(ignitable)) { if (ignitable.ActualFireState == FireState.CanBurn) { ignitable.ChangeStatus(FireState.OnFire); } }
         }
     }
 
-    public void ChangeStatus(string fireState)
+    public void ChangeStatus(FireState fireState)
     {
-        Debug.Log(fireState);
         switch (fireState)
         {
-            case "onfire":
+            case FireState.OnFire:
                 _actualFireState = FireState.OnFire;
+                EventBus.ExtinguishedFires(-1);
                 break;
 
-            case "waiting":
+            case FireState.WaitingToBurnAgain:
                 _actualFireState = FireState.WaitingToBurnAgain;
+                EventBus.ExtinguishedFires(1);
                 break;
 
-            case "canburn":
+            case FireState.CanBurn:
                 _actualFireState = FireState.CanBurn;
                 break;
 
-            case "extinguished":
+            case FireState.Extinguished:
                 _actualFireState = FireState.Extinguished;
+                EventBus.BurnedOutFires(1);
                 break;
 
             default:
