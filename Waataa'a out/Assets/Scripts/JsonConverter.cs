@@ -16,14 +16,9 @@ public class JsonConverter : MonoBehaviour
         else if (Instance != this) { Destroy(this.gameObject); }
 
         _path = Path.Combine(Application.persistentDataPath, "DatosGuardados.json");
-        if(File.Exists(_path))
-        {
-            ReadJson();
-        }
-        else
-        {
-            CreateJson();
-        }
+
+        if(File.Exists(_path)) { ReadJson(); }
+        else { CreateJson(); }
     }
 
     private void CreateJson()
