@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class IIgnitableCount : MonoBehaviour
 {
-    [Header ("References")]
+    [Header ("Instance")]
     public static IIgnitableCount Instance;
 
     [Header("Variables")]
