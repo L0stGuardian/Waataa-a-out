@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
             ActivateAndDeactivateSlider(false);
         }
 
-        if (_moveAction.IsPressed() && !_onGround) { _targetRotationZ += _moveValue.x * _rotationSpeed * Time.deltaTime; }
+        if (_moveAction.IsPressed() && !_onGround) { _targetRotationZ += _moveValue.x * _rotationSpeed * Time.deltaTime * -1; }
 
         if (_onGround) { _targetRotationZ = 0f; }
 
