@@ -17,11 +17,14 @@ public class LevelManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Canvas _finalCanvas;
     [SerializeField] private TextMeshProUGUI _victoryFailText;
+    [SerializeField] private TextMeshProUGUI _burnedOutText;
+    [SerializeField] private TextMeshProUGUI _extinguishedText;
     [SerializeField] private Button _returnButton;
     [SerializeField] private Button _retryButton;
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         if(Instance == null) { Instance = this; }
         else if (Instance != this) {Destroy(this.gameObject); }
         _extinguishedFires = 0;
@@ -77,7 +80,8 @@ public class LevelManager : MonoBehaviour
         if (isVictory)
         {
             _victoryFailText.text = "Victory!";
-            _victoryFailText.color = Color.green;
+            _victoryFailText.color = Color.blue;
+            StatsText();
             if(SceneManager.GetActiveScene().name == "Lvl1") 
             { 
                 JsonConverter.Instance.PlayerInfo.canAccessSecondLevel = true;
@@ -88,6 +92,7 @@ public class LevelManager : MonoBehaviour
         {
             _victoryFailText.text = "Fail";
             _victoryFailText.color = Color.red;
+            StatsText();
         }
 
         Time.timeScale = 0f;
@@ -95,11 +100,20 @@ public class LevelManager : MonoBehaviour
 
     private void RetryLevel()
     {
-        ScenesManager.Instance.LoadLevel1();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     private void ReturnMainMenu()
     {
         ScenesManager.Instance.LoadMenu();
+    }
+
+    private void StatsText()
+    {
+        _burnedOutText.text = "Burned Out Fires: " + _burnedOutFires.ToString();
+        _burnedOutText.color = Color.red;
+
+        _extinguishedText.text = "Extinguished Fires: " + _extinguishedFires.ToString();
+        _extinguishedText.color = Color.blue;
     }
 }
