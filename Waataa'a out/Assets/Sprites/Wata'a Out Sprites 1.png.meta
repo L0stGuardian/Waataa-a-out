@@ -1485,9 +1485,9 @@ TextureImporter:
       name: Wata'a Out Sprites 1_90
       rect:
         serializedVersion: 2
-        x: 1807
+        x: 1695
         y: 23
-        width: 222
+        width: 334
         height: 330
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1499,28 +1499,6 @@ TextureImporter:
       bones: []
       spriteID: 4fb695bd2a15ad620800000000000000
       internalID: 2799639878270807028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wata'a Out Sprites 1_100
-      rect:
-        serializedVersion: 2
-        x: 1695
-        y: 119
-        width: 110
-        height: 126
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bc105dfd39c3e8910800000000000000
-      internalID: 1841475903454249419
       vertices: []
       indices: 
       edges: []

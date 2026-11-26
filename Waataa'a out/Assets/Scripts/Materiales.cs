@@ -61,6 +61,9 @@ public class Materials : MonoBehaviour, IIgnitable
         get { return _currentHealth; }
         set { _currentHealth = value; }
     }
+
+    [Header("Animator")]
+    private Animator _m_Animator;
     void Awake()
     {
         MaxHealth = _material.MaxHealth;
@@ -75,6 +78,9 @@ public class Materials : MonoBehaviour, IIgnitable
     void Start()
     {
         _objectRenderer = GetComponent<Renderer>();
+        _m_Animator = GetComponent<Animator>();
+        _m_Animator.SetTrigger("CanBurn");
+
     }
 
     void Update()
@@ -84,21 +90,37 @@ public class Materials : MonoBehaviour, IIgnitable
         {
             DealFireDamage();
             _timer = 0f;
+            _m_Animator.ResetTrigger("CanBurn");
+            _m_Animator.SetTrigger("OnFire");
         }
 
-        if (_currentHealth == 0 && _actualFireState != FireState.Extinguished) { ChangeStatus(FireState.Extinguished); }
+        if (_currentHealth == 0 && _actualFireState != FireState.Extinguished) 
+        { 
+            ChangeStatus(FireState.Extinguished);
+            _m_Animator.ResetTrigger("OnFire");
+            _m_Animator.SetTrigger("Extinguished");
+        }
 
         if (_currentHealth > 0 && _lifePercentage <= _percentageToIgnite && _actualFireState == FireState.OnFire) { PassFire(); }
 
-        if (_actualFireState == FireState.WaitingToBurnAgain) { _timerToBurnAgain += Time.deltaTime; }
+        if (_actualFireState == FireState.WaitingToBurnAgain) 
+        { 
+            _timerToBurnAgain += Time.deltaTime;
+            _m_Animator.ResetTrigger("CanBurn");
+            _m_Animator.ResetTrigger("OnFire");
+            _m_Animator.SetTrigger("WaitForBurn");
+        }
 
         if (_timerToBurnAgain >= _timeToBurnAgain) 
         { 
+
             ChangeStatus(FireState.CanBurn); 
             _timerToBurnAgain = 0f;
+            _m_Animator.ResetTrigger("WaitForBurn");
+            _m_Animator.SetTrigger("CanBurn");
         }
 
-        ChangeSprite();
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -159,30 +181,7 @@ public class Materials : MonoBehaviour, IIgnitable
         }
     }
 
-    private void ChangeSprite()
-    {
-        switch (_actualFireState)
-        {
-            case FireState.OnFire:
-                _objectRenderer.material.color = Color.red;
-                break;
-
-            case FireState.WaitingToBurnAgain:
-                _objectRenderer.material.color = Color.blue;
-                break;
-
-            case FireState.CanBurn:
-                _objectRenderer.material.color = Color.green;
-                break;
-
-            case FireState.Extinguished:
-                _objectRenderer.material.color = Color.gray;
-                break;
-
-            default:
-                break;
-        }
-    }
+    
 
     private void OnDrawGizmos()
     {
