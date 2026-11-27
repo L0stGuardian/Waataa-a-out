@@ -1,52 +1,58 @@
 fileFormatVersion: 2
-guid: 40e46cd25c02e4a4ebac79838c040545
+guid: 5d40a9edc415a4c44abedd5c9baf6e7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2652165971268545046
-    second: Wataa Out Fire Bed Sprites_0
+      213: 5365879075348099415
+    second: Wataa Out wet Bed Sprites_0
   - first:
-      213: 5286449857188415148
-    second: Wataa Out Fire Bed Sprites_1
+      213: -7257029130559342139
+    second: Wataa Out wet Bed Sprites_1
   - first:
-      213: 6495562328743001307
-    second: Wataa Out Fire Bed Sprites_2
+      213: 4883735201593055901
+    second: Wataa Out wet Bed Sprites_2
   - first:
-      213: 2804727011365979381
-    second: Wataa Out Fire Bed Sprites_3
+      213: -5772917841936413590
+    second: Wataa Out wet Bed Sprites_3
   - first:
-      213: -1753226314006667693
-    second: Wataa Out Fire Bed Sprites_4
+      213: 364743362550476426
+    second: Wataa Out wet Bed Sprites_4
   - first:
-      213: -2787897998833714167
-    second: Wataa Out Fire Bed Sprites_5
+      213: -4388453222117730161
+    second: Wataa Out wet Bed Sprites_5
   - first:
-      213: 7866132338949464737
-    second: Wataa Out Fire Bed Sprites_6
+      213: 6886919240480649092
+    second: Wataa Out wet Bed Sprites_6
   - first:
-      213: -7726549202052477291
-    second: Wataa Out Fire Bed Sprites_7
+      213: -636234218601932076
+    second: Wataa Out wet Bed Sprites_7
   - first:
-      213: -1824569461085790520
-    second: Wataa Out Fire Bed Sprites_8
+      213: 7689661582172024074
+    second: Wataa Out wet Bed Sprites_8
   - first:
-      213: 1141419233030911351
-    second: Wataa Out Fire Bed Sprites_9
+      213: -6269977144704448641
+    second: Wataa Out wet Bed Sprites_9
   - first:
-      213: -7047146580620376888
-    second: Wataa Out Fire Bed Sprites_10
+      213: -8688716460669072616
+    second: Wataa Out wet Bed Sprites_10
   - first:
-      213: -4027147260651368862
-    second: Wataa Out Fire Bed Sprites_11
+      213: -2216386790024186145
+    second: Wataa Out wet Bed Sprites_11
   - first:
-      213: 9197800577566963949
-    second: Wataa Out Fire Bed Sprites_12
+      213: -797327895049828133
+    second: Wataa Out wet Bed Sprites_12
   - first:
-      213: -4882634646542631014
-    second: Wataa Out Fire Bed Sprites_13
+      213: 3868017720576621719
+    second: Wataa Out wet Bed Sprites_13
   - first:
-      213: -1107890367461796983
-    second: Wataa Out Fire Bed Sprites_14
+      213: -404532525353692006
+    second: Wataa Out wet Bed Sprites_14
+  - first:
+      213: -2895338358982999847
+    second: Wataa Out wet Bed Sprites_15
+  - first:
+      213: -6567121010411124433
+    second: Wataa Out wet Bed Sprites_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +99,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,16 +144,29 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_0
+      name: Wataa Out wet Bed Sprites_0
       rect:
         serializedVersion: 2
-        x: 53
-        y: 447
-        width: 480
+        x: 23
+        y: 838
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -157,19 +176,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae5d825d91d913bd0800000000000000
-      internalID: -2652165971268545046
+      spriteID: 75133d1e69e677a40800000000000000
+      internalID: 5365879075348099415
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_1
+      name: Wataa Out wet Bed Sprites_2
       rect:
         serializedVersion: 2
-        x: 565
-        y: 447
-        width: 480
+        x: 534
+        y: 839
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -179,19 +198,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca641a4e22e3d5940800000000000000
-      internalID: 5286449857188415148
+      spriteID: d9a560c6a4386c340800000000000000
+      internalID: 4883735201593055901
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_2
+      name: Wataa Out wet Bed Sprites_4
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 447
-        width: 480
+        x: 1046
+        y: 839
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -201,19 +220,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdcb225e58fd42a50800000000000000
-      internalID: 6495562328743001307
+      spriteID: a8ea00fd724df0500800000000000000
+      internalID: 364743362550476426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_4
+      name: Wataa Out wet Bed Sprites_5
       rect:
         serializedVersion: 2
-        x: 1604
-        y: 447
-        width: 480
+        x: 1573
+        y: 839
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -223,19 +242,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35ed3c6d4f94ba7e0800000000000000
-      internalID: -1753226314006667693
+      spriteID: f881146ab051913c0800000000000000
+      internalID: -4388453222117730161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_7
+      name: Wataa Out wet Bed Sprites_6
       rect:
         serializedVersion: 2
-        x: 53
-        y: 25
-        width: 480
+        x: 23
+        y: 417
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -245,19 +264,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59e85101078c5c490800000000000000
-      internalID: -7726549202052477291
+      spriteID: 48fe6ad8f80439f50800000000000000
+      internalID: 6886919240480649092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_9
+      name: Wataa Out wet Bed Sprites_8
       rect:
         serializedVersion: 2
-        x: 565
-        y: 25
-        width: 480
+        x: 535
+        y: 417
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -267,19 +286,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7753b94beb227df00800000000000000
-      internalID: 1141419233030911351
+      spriteID: a0de458a77a27ba60800000000000000
+      internalID: 7689661582172024074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_11
+      name: Wataa Out wet Bed Sprites_11
       rect:
         serializedVersion: 2
-        x: 1076
-        y: 25
-        width: 480
+        x: 1046
+        y: 417
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -289,19 +308,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26e00b637e2bc18c0800000000000000
-      internalID: -4027147260651368862
+      spriteID: fd67db715ffcd31e0800000000000000
+      internalID: -2216386790024186145
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wataa Out Fire Bed Sprites_14
+      name: Wataa Out wet Bed Sprites_12
       rect:
         serializedVersion: 2
-        x: 1604
-        y: 25
-        width: 480
+        x: 1573
+        y: 417
+        width: 510
         height: 361
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -311,8 +330,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 983dc55a49bff90f0800000000000000
-      internalID: -1107890367461796983
+      spriteID: bd88b0ef0825fe4f0800000000000000
+      internalID: -797327895049828133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out wet Bed Sprites_15
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 38
+        width: 480
+        height: 324
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d081484a11b1d7d0800000000000000
+      internalID: -2895338358982999847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out wet Bed Sprites_16
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 42
+        width: 459
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29c0713c36ecd4a0800000000000000
+      internalID: -6567121010411124433
       vertices: []
       indices: 
       edges: []
@@ -321,7 +384,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: e5a75a3dececd8848999296eb3abc1b1
     internalID: 0
     vertices: []
     indices: 
@@ -331,21 +394,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Wataa Out Fire Bed Sprites_0: -2652165971268545046
-      Wataa Out Fire Bed Sprites_1: 5286449857188415148
-      Wataa Out Fire Bed Sprites_10: -7047146580620376888
-      Wataa Out Fire Bed Sprites_11: -4027147260651368862
-      Wataa Out Fire Bed Sprites_12: 9197800577566963949
-      Wataa Out Fire Bed Sprites_13: -4882634646542631014
-      Wataa Out Fire Bed Sprites_14: -1107890367461796983
-      Wataa Out Fire Bed Sprites_2: 6495562328743001307
-      Wataa Out Fire Bed Sprites_3: 2804727011365979381
-      Wataa Out Fire Bed Sprites_4: -1753226314006667693
-      Wataa Out Fire Bed Sprites_5: -2787897998833714167
-      Wataa Out Fire Bed Sprites_6: 7866132338949464737
-      Wataa Out Fire Bed Sprites_7: -7726549202052477291
-      Wataa Out Fire Bed Sprites_8: -1824569461085790520
-      Wataa Out Fire Bed Sprites_9: 1141419233030911351
+      Wataa Out wet Bed Sprites_0: 5365879075348099415
+      Wataa Out wet Bed Sprites_1: -7257029130559342139
+      Wataa Out wet Bed Sprites_10: -8688716460669072616
+      Wataa Out wet Bed Sprites_11: -2216386790024186145
+      Wataa Out wet Bed Sprites_12: -797327895049828133
+      Wataa Out wet Bed Sprites_13: 3868017720576621719
+      Wataa Out wet Bed Sprites_14: -404532525353692006
+      Wataa Out wet Bed Sprites_15: -2895338358982999847
+      Wataa Out wet Bed Sprites_16: -6567121010411124433
+      Wataa Out wet Bed Sprites_2: 4883735201593055901
+      Wataa Out wet Bed Sprites_3: -5772917841936413590
+      Wataa Out wet Bed Sprites_4: 364743362550476426
+      Wataa Out wet Bed Sprites_5: -4388453222117730161
+      Wataa Out wet Bed Sprites_6: 6886919240480649092
+      Wataa Out wet Bed Sprites_7: -636234218601932076
+      Wataa Out wet Bed Sprites_8: 7689661582172024074
+      Wataa Out wet Bed Sprites_9: -6269977144704448641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 39e7bcc73acf0eb48b0bc73303604cbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2697259564924983878
+    second: Wataa Out Fire Bed Sprites 1_0
+  - first:
+      213: 593169554638128790
+    second: Wataa Out Fire Bed Sprites 1_1
+  - first:
+      213: 4649764251870505906
+    second: Wataa Out Fire Bed Sprites 1_2
+  - first:
+      213: 1041407425016647335
+    second: Wataa Out Fire Bed Sprites 1_3
+  - first:
+      213: -4371211020777463304
+    second: Wataa Out Fire Bed Sprites 1_4
+  - first:
+      213: 6233714305251824041
+    second: Wataa Out Fire Bed Sprites 1_5
+  - first:
+      213: -6343982292652007709
+    second: Wataa Out Fire Bed Sprites 1_6
+  - first:
+      213: -378560991555354894
+    second: Wataa Out Fire Bed Sprites 1_7
+  - first:
+      213: 6568038392110611142
+    second: Wataa Out Fire Bed Sprites 1_8
+  - first:
+      213: 5428620659892668262
+    second: Wataa Out Fire Bed Sprites 1_9
+  - first:
+      213: 3428154646893311477
+    second: Wataa Out Fire Bed Sprites 1_10
+  - first:
+      213: 780657781421959049
+    second: Wataa Out Fire Bed Sprites 1_11
+  - first:
+      213: 7841540494578576819
+    second: Wataa Out Fire Bed Sprites 1_12
+  - first:
+      213: -5484314891771981048
+    second: Wataa Out Fire Bed Sprites 1_13
+  - first:
+      213: -1754545835313140825
+    second: Wataa Out Fire Bed Sprites 1_14
+  - first:
+      213: 7396359916805380142
+    second: Wataa Out Fire Bed Sprites 1_15
+  - first:
+      213: 22241439013463978
+    second: Wataa Out Fire Bed Sprites 1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 839
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab52f9567b8619ad0800000000000000
+      internalID: -2697259564924983878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 839
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69648c3319c5b3800800000000000000
+      internalID: 593169554638128790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_2
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 839
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb2d0a93f7478040800000000000000
+      internalID: 4649764251870505906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_4
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 839
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1694c7cb65653c0800000000000000
+      internalID: -4371211020777463304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_7
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 417
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fef58ca8c41fbaf0800000000000000
+      internalID: -378560991555354894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_9
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 417
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667cf356ab5565b40800000000000000
+      internalID: 5428620659892668262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_11
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 417
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987ecc8bd1475da00800000000000000
+      internalID: 780657781421959049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_14
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 417
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7abe408dbd996a7e0800000000000000
+      internalID: -1754545835313140825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_15
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 38
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e285f10282625a660800000000000000
+      internalID: 7396359916805380142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Fire Bed Sprites 1_16
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 42
+        width: 510
+        height: 361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7e0bf88740f4000800000000000000
+      internalID: 22241439013463978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3dbf88a33fabc9549a67f63594be2941
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wataa Out Fire Bed Sprites 1_0: -2697259564924983878
+      Wataa Out Fire Bed Sprites 1_1: 593169554638128790
+      Wataa Out Fire Bed Sprites 1_10: 3428154646893311477
+      Wataa Out Fire Bed Sprites 1_11: 780657781421959049
+      Wataa Out Fire Bed Sprites 1_12: 7841540494578576819
+      Wataa Out Fire Bed Sprites 1_13: -5484314891771981048
+      Wataa Out Fire Bed Sprites 1_14: -1754545835313140825
+      Wataa Out Fire Bed Sprites 1_15: 7396359916805380142
+      Wataa Out Fire Bed Sprites 1_16: 22241439013463978
+      Wataa Out Fire Bed Sprites 1_2: 4649764251870505906
+      Wataa Out Fire Bed Sprites 1_3: 1041407425016647335
+      Wataa Out Fire Bed Sprites 1_4: -4371211020777463304
+      Wataa Out Fire Bed Sprites 1_5: 6233714305251824041
+      Wataa Out Fire Bed Sprites 1_6: -6343982292652007709
+      Wataa Out Fire Bed Sprites 1_7: -378560991555354894
+      Wataa Out Fire Bed Sprites 1_8: 6568038392110611142
+      Wataa Out Fire Bed Sprites 1_9: 5428620659892668262
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
