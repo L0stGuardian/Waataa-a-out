@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bebf57adc9a417543b759769afe1ef47, type: 3}
-  m_Name: Table
+  m_Name: Desk_Material
   m_EditorClassIdentifier: Assembly-CSharp::Material
-  _maxHealth: 200
+  _maxHealth: 175
   _fireDamage: 1
-  _percentageToIgnite: 20
-  _timeToBurn: 50
+  _percentageToIgnite: 60
+  _timeToBurn: 20
