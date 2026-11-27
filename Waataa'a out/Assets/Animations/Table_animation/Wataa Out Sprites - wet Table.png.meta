@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 17bcb0a40acf06f47ba887425274c7c0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5807211278425013098
+    second: Wataa Out Sprites - wet Table_0
+  - first:
+      213: 223814658049636293
+    second: Wataa Out Sprites - wet Table_1
+  - first:
+      213: 2774092214210737920
+    second: Wataa Out Sprites - wet Table_2
+  - first:
+      213: 1954367077935294075
+    second: Wataa Out Sprites - wet Table_3
+  - first:
+      213: 301104934799922607
+    second: Wataa Out Sprites - wet Table_4
+  - first:
+      213: 3097723577411599200
+    second: Wataa Out Sprites - wet Table_5
+  - first:
+      213: -7701906730692166804
+    second: Wataa Out Sprites - wet Table_6
+  - first:
+      213: 5594513760327270001
+    second: Wataa Out Sprites - wet Table_7
+  - first:
+      213: 4902601928946250086
+    second: Wataa Out Sprites - wet Table_8
+  - first:
+      213: -3738128076310426145
+    second: Wataa Out Sprites - wet Table_9
+  - first:
+      213: 6938828898434742124
+    second: Wataa Out Sprites - wet Table_10
+  - first:
+      213: -8389382871551059389
+    second: Wataa Out Sprites - wet Table_11
+  - first:
+      213: 3017382566469572748
+    second: Wataa Out Sprites - wet Table_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 684
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b3a2ac3eb579050800000000000000
+      internalID: 5807211278425013098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_1
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 684
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7f294ee362b1300800000000000000
+      internalID: 223814658049636293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_2
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 684
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007353acb2e8f7620800000000000000
+      internalID: 2774092214210737920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_3
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 684
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b762d01b08e4f1b10800000000000000
+      internalID: 1954367077935294075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_4
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 684
+        width: 389
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5ddd6c75dbd2400800000000000000
+      internalID: 301104934799922607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 315
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06b78f36e235dfa20800000000000000
+      internalID: 3097723577411599200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_6
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 315
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b37e782a45d1590800000000000000
+      internalID: -7701906730692166804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_7
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 315
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e775fbf94b3ad40800000000000000
+      internalID: 5594513760327270001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_8
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 315
+        width: 391
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6617cf1ba7a890440800000000000000
+      internalID: 4902601928946250086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_9
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 315
+        width: 390
+        height: 194
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd4a9ee1508f1cc0800000000000000
+      internalID: -3738128076310426145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_10
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 39
+        width: 359
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c67fa60ae1cab4060800000000000000
+      internalID: 6938828898434742124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 38
+        width: 362
+        height: 197
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ad3782abce29b80800000000000000
+      internalID: -8389382871551059389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Table_12
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 0
+        width: 616
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8810e91575efd920800000000000000
+      internalID: 3017382566469572748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 356bf9c2c181f1346847aa2da5450e28
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wataa Out Sprites - wet Table_0: 5807211278425013098
+      Wataa Out Sprites - wet Table_1: 223814658049636293
+      Wataa Out Sprites - wet Table_10: 6938828898434742124
+      Wataa Out Sprites - wet Table_11: -8389382871551059389
+      Wataa Out Sprites - wet Table_12: 3017382566469572748
+      Wataa Out Sprites - wet Table_2: 2774092214210737920
+      Wataa Out Sprites - wet Table_3: 1954367077935294075
+      Wataa Out Sprites - wet Table_4: 301104934799922607
+      Wataa Out Sprites - wet Table_5: 3097723577411599200
+      Wataa Out Sprites - wet Table_6: -7701906730692166804
+      Wataa Out Sprites - wet Table_7: 5594513760327270001
+      Wataa Out Sprites - wet Table_8: 4902601928946250086
+      Wataa Out Sprites - wet Table_9: -3738128076310426145
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

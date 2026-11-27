@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Material
   _maxHealth: 500
   _fireDamage: 1
-  _percentageToIgnite: 20
+  _percentageToIgnite: 50
   _timeToBurn: 30

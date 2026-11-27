@@ -1,0 +1,426 @@
+fileFormatVersion: 2
+guid: e969b1ab74df4834c8ce022c310781c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7793141855429145474
+    second: Wataa Out Sprites - fire Table_0
+  - first:
+      213: -1192751350707171475
+    second: Wataa Out Sprites - fire Table_1
+  - first:
+      213: -6807114482575802925
+    second: Wataa Out Sprites - fire Table_2
+  - first:
+      213: 8450060265919698286
+    second: Wataa Out Sprites - fire Table_3
+  - first:
+      213: -7013667989298760508
+    second: Wataa Out Sprites - fire Table_4
+  - first:
+      213: -4038717526123336766
+    second: Wataa Out Sprites - fire Table_5
+  - first:
+      213: 2764252349331919862
+    second: Wataa Out Sprites - fire Table_6
+  - first:
+      213: -6185233872122150592
+    second: Wataa Out Sprites - fire Table_7
+  - first:
+      213: -7019226179551061101
+    second: Wataa Out Sprites - fire Table_8
+  - first:
+      213: 4913400981347039168
+    second: Wataa Out Sprites - fire Table_9
+  - first:
+      213: 3194456154648727352
+    second: Wataa Out Sprites - fire Table_10
+  - first:
+      213: 7153765716450948729
+    second: Wataa Out Sprites - fire Table_11
+  - first:
+      213: -7654434523322364918
+    second: Wataa Out Sprites - fire Table_12
+  - first:
+      213: -7805262295365347328
+    second: Wataa Out Sprites - fire Table_13
+  - first:
+      213: 4063431758755819476
+    second: Wataa Out Sprites - fire Table_14
+  - first:
+      213: -3980604267186086638
+    second: Wataa Out Sprites - fire Table_15
+  - first:
+      213: -8676058438379352990
+    second: Wataa Out Sprites - fire Table_16
+  - first:
+      213: -127788729097719277
+    second: Wataa Out Sprites - fire Table_17
+  - first:
+      213: -4291022599009245219
+    second: Wataa Out Sprites - fire Table_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_2
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 683
+        width: 379
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ddf6a891754881a0800000000000000
+      internalID: -6807114482575802925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_5
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 683
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb264bdec793f7c0800000000000000
+      internalID: -4038717526123336766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_6
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 683
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f3d777bdd89c5620800000000000000
+      internalID: 2764252349331919862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_9
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 683
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7fe340928ef2440800000000000000
+      internalID: 4913400981347039168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_12
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 314
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c42e02b5cf5c590800000000000000
+      internalID: -7654434523322364918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_13
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 314
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0089ff1eb432ea390800000000000000
+      internalID: -7805262295365347328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_14
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 314
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df6ea5d7a5346830800000000000000
+      internalID: 4063431758755819476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_16
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 314
+        width: 391
+        height: 307
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c4ed961d2789780800000000000000
+      internalID: -8676058438379352990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_17
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 39
+        width: 391
+        height: 241
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312f4d3f3d00a3ef0800000000000000
+      internalID: -127788729097719277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Table_18
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 38
+        width: 389
+        height: 247
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd761e65ea93374c0800000000000000
+      internalID: -4291022599009245219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2c671a3a6486a914cbc81bf5197a8353
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wataa Out Sprites - fire Table_0: -7793141855429145474
+      Wataa Out Sprites - fire Table_1: -1192751350707171475
+      Wataa Out Sprites - fire Table_10: 3194456154648727352
+      Wataa Out Sprites - fire Table_11: 7153765716450948729
+      Wataa Out Sprites - fire Table_12: -7654434523322364918
+      Wataa Out Sprites - fire Table_13: -7805262295365347328
+      Wataa Out Sprites - fire Table_14: 4063431758755819476
+      Wataa Out Sprites - fire Table_15: -3980604267186086638
+      Wataa Out Sprites - fire Table_16: -8676058438379352990
+      Wataa Out Sprites - fire Table_17: -127788729097719277
+      Wataa Out Sprites - fire Table_18: -4291022599009245219
+      Wataa Out Sprites - fire Table_2: -6807114482575802925
+      Wataa Out Sprites - fire Table_3: 8450060265919698286
+      Wataa Out Sprites - fire Table_4: -7013667989298760508
+      Wataa Out Sprites - fire Table_5: -4038717526123336766
+      Wataa Out Sprites - fire Table_6: 2764252349331919862
+      Wataa Out Sprites - fire Table_7: -6185233872122150592
+      Wataa Out Sprites - fire Table_8: -7019226179551061101
+      Wataa Out Sprites - fire Table_9: 4913400981347039168
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
