@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 8d47c9ad39887814db8f36f67eda053f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7764070701994463115
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_0
+  - first:
+      213: -4914255526851047694
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_1
+  - first:
+      213: -9202638194030756204
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_2
+  - first:
+      213: 4479631893430138934
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_3
+  - first:
+      213: 6302869330653175996
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_4
+  - first:
+      213: -5612555620707005026
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_5
+  - first:
+      213: -8761823322445019897
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_6
+  - first:
+      213: -5271794802726041613
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_7
+  - first:
+      213: 1064754968052806449
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_8
+  - first:
+      213: 5531451785379004678
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_9
+  - first:
+      213: -4921320047471956076
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_10
+  - first:
+      213: -8384233364268282222
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_11
+  - first:
+      213: -72093361580956098
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_12
+  - first:
+      213: -1655823531341540824
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_13
+  - first:
+      213: -5067925016126895229
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_14
+  - first:
+      213: 5631097280227228023
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_15
+  - first:
+      213: -4315830342257152537
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_16
+  - first:
+      213: -466086615377130918
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_17
+  - first:
+      213: -4219084783842292109
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_18
+  - first:
+      213: -8017001371858776383
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_19
+  - first:
+      213: -1038865578324769881
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_20
+  - first:
+      213: 3703610960697270101
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_21
+  - first:
+      213: -7899286355727429161
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_22
+  - first:
+      213: 7668661629410946626
+    second: Wataa Out Sprites - wet Chair pair 2 out of 2_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2063
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8fc56bea258fbb60800000000000000
+      internalID: 7764070701994463115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 2063
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe0b8a92ae0dcbb0800000000000000
+      internalID: -4914255526851047694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_2
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 2063
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49eba58f159a94080800000000000000
+      internalID: -9202638194030756204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_3
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 2063
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638f9641979da2e30800000000000000
+      internalID: 4479631893430138934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_4
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 2063
+        width: 352
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb0694f134a487750800000000000000
+      internalID: 6302869330653175996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_5
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 2063
+        width: 360
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d03a946623c12b0800000000000000
+      internalID: -5612555620707005026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1415
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7058ee04c10c76680800000000000000
+      internalID: -8761823322445019897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1415
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f783cede82d6d6b0800000000000000
+      internalID: -5271794802726041613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_8
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1415
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133be9b8005c6ce00800000000000000
+      internalID: 1064754968052806449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_9
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1415
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60147b7871aa3cc40800000000000000
+      internalID: 5531451785379004678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_10
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1415
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fec68bd75f3bbb0800000000000000
+      internalID: -4921320047471956076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_11
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1415
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e8fc04d2835ab80800000000000000
+      internalID: -8384233364268282222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 699
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36ad48387fdffef0800000000000000
+      internalID: -72093361580956098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 699
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82297ab65455509e0800000000000000
+      internalID: -1655823531341540824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_14
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 699
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bc0718c0d1ba9b0800000000000000
+      internalID: -5067925016126895229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_15
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 699
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779bc9b342da52e40800000000000000
+      internalID: 5631097280227228023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_16
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 681
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ede8e28b271b14c0800000000000000
+      internalID: -4315830342257152537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_17
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 681
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ac1e751b02889f0800000000000000
+      internalID: -466086615377130918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 51
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e03d52ebcc275c0800000000000000
+      internalID: -4219084783842292109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_19
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 51
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cec98a6ab3edb090800000000000000
+      internalID: -8017001371858776383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_20
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 51
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3429ab2453591f0800000000000000
+      internalID: -1038865578324769881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_21
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 51
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f9a92db8ed56330800000000000000
+      internalID: 3703610960697270101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_22
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 49
+        width: 350
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1d6c369e8106290800000000000000
+      internalID: -7899286355727429161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - wet Chair pair 2 out of 2_23
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 49
+        width: 362
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e25b32f1f8c6a60800000000000000
+      internalID: 7668661629410946626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d9873007212f6ee43862474bd92b0b93
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wataa Out Sprites - wet Chair pair 2 out of 2_0: 7764070701994463115
+      Wataa Out Sprites - wet Chair pair 2 out of 2_1: -4914255526851047694
+      Wataa Out Sprites - wet Chair pair 2 out of 2_10: -4921320047471956076
+      Wataa Out Sprites - wet Chair pair 2 out of 2_11: -8384233364268282222
+      Wataa Out Sprites - wet Chair pair 2 out of 2_12: -72093361580956098
+      Wataa Out Sprites - wet Chair pair 2 out of 2_13: -1655823531341540824
+      Wataa Out Sprites - wet Chair pair 2 out of 2_14: -5067925016126895229
+      Wataa Out Sprites - wet Chair pair 2 out of 2_15: 5631097280227228023
+      Wataa Out Sprites - wet Chair pair 2 out of 2_16: -4315830342257152537
+      Wataa Out Sprites - wet Chair pair 2 out of 2_17: -466086615377130918
+      Wataa Out Sprites - wet Chair pair 2 out of 2_18: -4219084783842292109
+      Wataa Out Sprites - wet Chair pair 2 out of 2_19: -8017001371858776383
+      Wataa Out Sprites - wet Chair pair 2 out of 2_2: -9202638194030756204
+      Wataa Out Sprites - wet Chair pair 2 out of 2_20: -1038865578324769881
+      Wataa Out Sprites - wet Chair pair 2 out of 2_21: 3703610960697270101
+      Wataa Out Sprites - wet Chair pair 2 out of 2_22: -7899286355727429161
+      Wataa Out Sprites - wet Chair pair 2 out of 2_23: 7668661629410946626
+      Wataa Out Sprites - wet Chair pair 2 out of 2_3: 4479631893430138934
+      Wataa Out Sprites - wet Chair pair 2 out of 2_4: 6302869330653175996
+      Wataa Out Sprites - wet Chair pair 2 out of 2_5: -5612555620707005026
+      Wataa Out Sprites - wet Chair pair 2 out of 2_6: -8761823322445019897
+      Wataa Out Sprites - wet Chair pair 2 out of 2_7: -5271794802726041613
+      Wataa Out Sprites - wet Chair pair 2 out of 2_8: 1064754968052806449
+      Wataa Out Sprites - wet Chair pair 2 out of 2_9: 5531451785379004678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

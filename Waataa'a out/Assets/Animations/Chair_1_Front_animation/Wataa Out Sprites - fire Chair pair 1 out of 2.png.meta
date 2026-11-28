@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: e4ca36a466868174f984dfbe1e2c1388
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2666257558986161446
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_0
+  - first:
+      213: 2002741301140133977
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_1
+  - first:
+      213: -6758813381525353479
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_2
+  - first:
+      213: 9135013181472718027
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_3
+  - first:
+      213: -5233129829462334887
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_4
+  - first:
+      213: -8917543260054664538
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_5
+  - first:
+      213: 5829932144169497811
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_6
+  - first:
+      213: -1021398332884984814
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_7
+  - first:
+      213: 765148606816881546
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_8
+  - first:
+      213: -2766711663665172993
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_9
+  - first:
+      213: -9056289171625777432
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_10
+  - first:
+      213: 263444108822748113
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_11
+  - first:
+      213: -5144420514108432603
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_12
+  - first:
+      213: -5304209227133184961
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_13
+  - first:
+      213: -2136797265707559555
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_14
+  - first:
+      213: 4403018657812232873
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_15
+  - first:
+      213: 7602105856400949470
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_16
+  - first:
+      213: 674453374759847868
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_17
+  - first:
+      213: -5150302243353318813
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_18
+  - first:
+      213: 1847063034631524954
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_19
+  - first:
+      213: -7628594777472769065
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_20
+  - first:
+      213: -2730031758529439413
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_21
+  - first:
+      213: 5785277130435940347
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_22
+  - first:
+      213: -6107321363904000474
+    second: Wataa Out Sprites - fire Chair pair 1 out of 2_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 2063
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62df11b9f13700520800000000000000
+      internalID: 2666257558986161446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 2063
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95816773a9a2bcb10800000000000000
+      internalID: 2002741301140133977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_2
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 2063
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb460b0a0fd332a0800000000000000
+      internalID: -6758813381525353479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_3
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 2063
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc3134d61616ce70800000000000000
+      internalID: 9135013181472718027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_4
+      rect:
+        serializedVersion: 2
+        x: 1765
+        y: 2063
+        width: 352
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952a56b75203067b0800000000000000
+      internalID: -5233129829462334887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_5
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 2063
+        width: 360
+        height: 332
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa4343f6a58e3480800000000000000
+      internalID: -8917543260054664538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_6
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1415
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4bad5956418e050800000000000000
+      internalID: 5829932144169497811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1415
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cd63ab0a343d1f0800000000000000
+      internalID: -1021398332884984814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_8
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 1415
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b84bd9a9a5e9a00800000000000000
+      internalID: 765148606816881546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_9
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1415
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdae4b866aaa99d0800000000000000
+      internalID: -2766711663665172993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_10
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 1415
+        width: 332
+        height: 548
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6670e0bf8915280800000000000000
+      internalID: -9056289171625777432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_11
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 1415
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db9c8c6501f7a300800000000000000
+      internalID: 263444108822748113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_12
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 699
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f95597cc85b98b0800000000000000
+      internalID: -5144420514108432603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_13
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 699
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3490629fc9a366b0800000000000000
+      internalID: -5304209227133184961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_14
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 699
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75997445329852e0800000000000000
+      internalID: -2136797265707559555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_15
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 699
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aab05e142aaa1d30800000000000000
+      internalID: 4403018657812232873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_16
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 681
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed002bbaffa108960800000000000000
+      internalID: 7602105856400949470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_17
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 681
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7cf1c55c32c5900800000000000000
+      internalID: 674453374759847868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_18
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 51
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a270ba5637688b0800000000000000
+      internalID: -5150302243353318813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_19
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 51
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5297f83b0612a910800000000000000
+      internalID: 1847063034631524954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_20
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 51
+        width: 332
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3e559c779c12690800000000000000
+      internalID: -7628594777472769065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_21
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 51
+        width: 344
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b495157749afc1ad0800000000000000
+      internalID: -2730031758529439413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_22
+      rect:
+        serializedVersion: 2
+        x: 1781
+        y: 49
+        width: 350
+        height: 548
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff43def5ee694050800000000000000
+      internalID: 5785277130435940347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Chair pair 1 out of 2_23
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 49
+        width: 362
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e0957d39f6e3ba0800000000000000
+      internalID: -6107321363904000474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1e70c4df69428e44aa040f244ad8dc4e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wataa Out Sprites - fire Chair pair 1 out of 2_0: 2666257558986161446
+      Wataa Out Sprites - fire Chair pair 1 out of 2_1: 2002741301140133977
+      Wataa Out Sprites - fire Chair pair 1 out of 2_10: -9056289171625777432
+      Wataa Out Sprites - fire Chair pair 1 out of 2_11: 263444108822748113
+      Wataa Out Sprites - fire Chair pair 1 out of 2_12: -5144420514108432603
+      Wataa Out Sprites - fire Chair pair 1 out of 2_13: -5304209227133184961
+      Wataa Out Sprites - fire Chair pair 1 out of 2_14: -2136797265707559555
+      Wataa Out Sprites - fire Chair pair 1 out of 2_15: 4403018657812232873
+      Wataa Out Sprites - fire Chair pair 1 out of 2_16: 7602105856400949470
+      Wataa Out Sprites - fire Chair pair 1 out of 2_17: 674453374759847868
+      Wataa Out Sprites - fire Chair pair 1 out of 2_18: -5150302243353318813
+      Wataa Out Sprites - fire Chair pair 1 out of 2_19: 1847063034631524954
+      Wataa Out Sprites - fire Chair pair 1 out of 2_2: -6758813381525353479
+      Wataa Out Sprites - fire Chair pair 1 out of 2_20: -7628594777472769065
+      Wataa Out Sprites - fire Chair pair 1 out of 2_21: -2730031758529439413
+      Wataa Out Sprites - fire Chair pair 1 out of 2_22: 5785277130435940347
+      Wataa Out Sprites - fire Chair pair 1 out of 2_23: -6107321363904000474
+      Wataa Out Sprites - fire Chair pair 1 out of 2_3: 9135013181472718027
+      Wataa Out Sprites - fire Chair pair 1 out of 2_4: -5233129829462334887
+      Wataa Out Sprites - fire Chair pair 1 out of 2_5: -8917543260054664538
+      Wataa Out Sprites - fire Chair pair 1 out of 2_6: 5829932144169497811
+      Wataa Out Sprites - fire Chair pair 1 out of 2_7: -1021398332884984814
+      Wataa Out Sprites - fire Chair pair 1 out of 2_8: 765148606816881546
+      Wataa Out Sprites - fire Chair pair 1 out of 2_9: -2766711663665172993
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

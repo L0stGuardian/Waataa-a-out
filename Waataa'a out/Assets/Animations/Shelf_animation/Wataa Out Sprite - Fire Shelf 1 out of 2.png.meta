@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: 396b281d45bd7ca4995b68c1551a9c0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8446101965704309616
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_0
+  - first:
+      213: -7975755766936035621
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_1
+  - first:
+      213: 982677663997115639
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_2
+  - first:
+      213: 249483580253687089
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_3
+  - first:
+      213: 4236470721303481582
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_4
+  - first:
+      213: 5592248465147747652
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_5
+  - first:
+      213: 2651137615430536312
+    second: Wataa Out Sprites - fire Shelf 1 out of 2_6
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Shelf 1 out of 2_0
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 903
+        width: 714
+        height: 642
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ba88a0df4963570800000000000000
+      internalID: 8446101965704309616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Shelf 1 out of 2_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 903
+        width: 714
+        height: 612
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc3243012c23ad00800000000000000
+      internalID: 982677663997115639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Shelf 1 out of 2_3
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 903
+        width: 714
+        height: 598
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d40529ef7567300800000000000000
+      internalID: 249483580253687089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Shelf 1 out of 2_4
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 63
+        width: 714
+        height: 604
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec03acdca7faca30800000000000000
+      internalID: 4236470721303481582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Shelf 1 out of 2_5
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 63
+        width: 722
+        height: 600
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ddadc9958ab9d40800000000000000
+      internalID: 5592248465147747652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wataa Out Sprites - fire Shelf 1 out of 2_6
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 63
+        width: 730
+        height: 598
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87cc96a6d9bbac420800000000000000
+      internalID: 2651137615430536312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 60711f5b49f52a44ab45960e5c43c469
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wataa Out Sprites - fire Shelf 1 out of 2_0: 8446101965704309616
+      Wataa Out Sprites - fire Shelf 1 out of 2_1: -7975755766936035621
+      Wataa Out Sprites - fire Shelf 1 out of 2_2: 982677663997115639
+      Wataa Out Sprites - fire Shelf 1 out of 2_3: 249483580253687089
+      Wataa Out Sprites - fire Shelf 1 out of 2_4: 4236470721303481582
+      Wataa Out Sprites - fire Shelf 1 out of 2_5: 5592248465147747652
+      Wataa Out Sprites - fire Shelf 1 out of 2_6: 2651137615430536312
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

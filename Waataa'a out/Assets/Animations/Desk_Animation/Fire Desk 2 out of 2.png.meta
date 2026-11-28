@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7c476ca1f198df348a7500befb6e0003
+guid: bd86089e78adfbe4082ab495cc73b47e
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -145,8 +145,8 @@ TextureImporter:
         serializedVersion: 2
         x: 13
         y: 391
-        width: 504
-        height: 306
+        width: 502
+        height: 300
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,7 +168,7 @@ TextureImporter:
         x: 523
         y: 390
         width: 504
-        height: 306
+        height: 299
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +191,8 @@ TextureImporter:
         y: 390
         width: 494
         height: 290
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,8 +211,8 @@ TextureImporter:
         serializedVersion: 2
         x: 13
         y: 27
-        width: 504
-        height: 306
+        width: 507
+        height: 312
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -233,8 +233,8 @@ TextureImporter:
         serializedVersion: 2
         x: 523
         y: 27
-        width: 504
-        height: 306
+        width: 502
+        height: 304
       alignment: 6
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0ffb31ccc50399340818081ed4ec6afc
+    spriteID: d67ce4a31b0363d4e971475493e503e6
     internalID: 0
     vertices: []
     indices: 
